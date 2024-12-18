@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="../assets/img/favicon.ico"
+    />
+    <title> تفاصيل الاعتراض </title>
+    <link href="../assets/css/nds-ds.css" rel="stylesheet" />
+    <link href="../assets/css/style.css" rel="stylesheet" />
+    <link href="../assets/css/e-participation.css" rel="stylesheet" />
+    <link href="../assets/css/animate.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../assets/css/bootstrap-icons.css" />
+    <link rel="stylesheet" href="../assets/css/aos.css" />
+    <link rel="stylesheet" href="../assets/css/profile.css" />
+
+     
+  </head>
+
+  <body>
+    <!-- Start  navigation bar -->
+    <nav class="navbar navbar-expand-lg ds-header sticky bg-white">
+      <div class="container">
+        <div class="d-flex">
+          <!-- Button for toggling the navigation menu -->
+          <button
+            class="navbar-toggler navbar-toggler-right collapsed"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navb"
+          >
+            <i class="ds-menu"></i>
+            <!-- Menu icon -->
+            <div class="md-hide text-primary">
+              <i class="ds-x-circle"></i> اغلاق
+              <!-- Close icon for small screens -->
+            </div>
+          </button>
+          <a class="navbar-brand" href="#">
+            <img
+              src="../assets/img/ds-white-logo.svg"
+              alt="logo"
+              class="green-nav-logo"
+            />
+            <!-- Green logo -->
+            <img
+              src="../assets/img/logo.svg"
+              class="light-nav-logo"
+              alt="logo"
+            />
+            <!-- Light logo -->
+          </a>
+        </div>
+
+        <div class="d-flex flex-row order-3" id="right-nav">
+          <ul class="navbar-nav flex-row">
+            <!-- List language for navigation -->
+            <li class="nav-item mobile-hide">
+              <a class="font-weight-bold nav-link" href="javascript:void(0)"
+                >English</a
+              >
+            </li>
+
+            <!-- user botton-->
+            <li class="nav-item nav-item-login">
+              <a class="nav-link with-icon main-nav text-nav with-icon">
+                <!-- User icon (green) -->
+                <i class="bi bi-person-fill text-green"></i>
+                <!-- User icon (white) -->
+                <p class="mobile-hide">رامي ابو لبن</p>
+              </a>
+              <!-- user menu-->
+              <div
+                id="login-dropdown-menu"
+                class="dropdown-menu dropdown-menu-login p-3"
+              >
+                <ul class="list-group list-group-flush">
+                   <a
+                    href="../profiles/individual_profile.html"
+                    class="main-nav list-group-item list-group-item-action"
+                  >
+                    <i class="bi bi-person-circle"></i>
+                    ملفي الشخصي
+                  </a>
+                  <a
+                  href="../login_type.html"
+                    class="main-nav list-group-item list-group-item-action logout"
+                  >
+                    <i class="bi bi-box-arrow-left"></i>
+                    تسجيل الخروج
+                  </a>
+                </ul>
+              </div>
+              <!--End user menu-->
+            </li>
+            <!--End user botton-->
+
+            <!-- notification botton-->
+            <li class="nav-item nav-item-notifi">
+              <a class="nav-link with-icon">
+                <i class="bi bi-bell-fill text-green"></i>
+                <span
+                  class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger text-white"
+                >
+                  9+
+                </span>
+
+                <p class="mobile-hide">الإشعارات</p>
+              </a>
+              <!-- notification menu-->
+              <div
+                id="notifi-dropdown-menu"
+                class="dropdown-menu dropdown-menu-notifi p-3"
+              >
+                <div class="list-group list-group-flush">
+                  <a
+                    href="#"
+                    class="list-group-item list-group-item-action"
+                    aria-current="true"
+                  >
+                    <div class="d-flex flex-row">
+                      <img
+                        class="p-2"
+                        src="../assets/img/proggres.svg"
+                        alt=""
+                      />
+                      <div class="p-2" style="text-align: right">
+                        <div class="d-flex w-100 justify-content-between">
+                          <p class="mb-1">
+                            <b> تم سداد المخالفة رقم </b>
+                            <span class="text-primary"> #2254352</span>
+                          </p>
+                        </div>
+                        <small class="font-body-5"> منذ ساعه </small>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <!-- End notification menu-->
+            </li>
+            <!-- End notification botton-->
+          </ul>
+        </div>
+
+        <!--  navigation menu-->
+
+        <div class="collapse navbar-collapse order-2" id="navb">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a
+                class="nav-link dropdown-toggle"
+                href="../dashboard pages/dashboard.html"
+                id="navbarDropdown4"
+              >
+                الرئيسية
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a
+                class="nav-link dropdown-toggle "
+                href="../transaction pages/transaction.html"
+                id="navbarDropdown4"
+              >
+                معاملاتي
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link dropdown-toggle"
+                href="../services/services.html"
+                id="navbarDropdown4"
+              >
+                خدماتي
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!--  End navigation menu-->
+      </div>
+    </nav>
+    <!-- End navigation bar -->
+    <!--  breadcrumb  -->
+    <nav class="ds-nav" style="margin-top: 80px">
+      <div class="container">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item">
+            <a href="../dashboard pages/dashboard.html">الصفحة الرئيسية</a>
+          </li>
+          <li class="breadcrumb-item">
+            <a href="../transaction pages/transaction.html"> معاملاتي </a>
+          </li>
+          <li class="breadcrumb-item">
+            <a href="/"> ملفي اعتراضاتي </a>
+          </li>
+          <li class="breadcrumb-item">
+            <a href="/"> تفاصيل الاعتراض </a>
+          </li>
+        </ol>
+      </div>
+    </nav>
+
+    <main class="container-fluid mb-5 p-0">
+      <div class="bg-lightgreen">
+        <div class="container px-4">
+          <div class="py-5 welcom-ms animate__animated animate__fadeIn ">
+            <!-- welcome message  -->
+            <h1 class="  ">تفاصيل الاعتراض</h1>
+
+            <!-- paragraph   -->
+            <p class="  ">جميع البيانات و المعلومات المتعلقة بالقضية</p>
+          </div>
+          <!-- start personal information card -->
+
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="card user-data" style="margin-bottom: 40px">
+                <!-- Card Header with Title -->
+                <div class="card-header">
+                  <h3 class="card-titler">بيانات المعاملة</h3>
+                  <!-- Replace with your desired title -->
+                </div>
+                <div class="card-body">
+                  <!-- First row of data -->
+                  <div class="row my-3">
+                    <!-- Data elements -->
+                    <div class="col-lg-4 my-1 data-item">
+                      <p class="data-label">رقم الاعتراض</p>
+
+                      <p class="text-gray-bus p-3" style="height: auto">
+                        312648
+                      </p>
+                    </div>
+                    <div class="col-lg-4 my-1 data-item">
+                      <p class="data-label">نوع المعاملة المعترض عليها</p>
+                      <p class="text-gray-bus p-3" style="height: auto">
+                        مخالفة
+                      </p>
+                    </div>
+                    <div class="col-lg-4 my-1 data-item">
+                      <p class="data-label">رقم المعاملة</p>
+                      <p class="text-gray-bus p-3" style="height: auto">
+                        21955
+                      </p>
+                    </div>
+                  </div>
+                  <!-- second row -->
+                  <div class="row my-3">
+                    <!-- Data elements -->
+                    <div class="col-lg-4 my-1 data-item">
+                      <p class="data-label">الحالة</p>
+
+                      <p class="text-gray-bus p-3" style="height: auto">
+                        تحت الاجراء
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- start another card -->
+
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="card user-data">
+                <!-- Card Header with Title -->
+                <div class="card-header">
+                  <h3 class="card-titler">بيانات الاعتراض</h3>
+                </div>
+                <div class="card-body p-0">
+                  <!-- Table for data -->
+                  <table class="table m-0 text-center">
+                    <thead>
+                      <tr>
+                        <th class="data-label-case">رقم</th>
+                        <th class="data-label-case">سبب الاعتراض</th>
+                        <th class="data-label-case">المرفقات</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="text-gray-bus-td p-3" style="height: auto">
+                          1
+                        </td>
+
+                        <td class="text-gray-bus-td p-3" style="height: auto">
+                          سبب الاعتراض
+                        </td>
+                        <td class="text-gray-bus-td p-3" style="height: auto">
+                          PDF
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="text-gray-bus-td p-3" style="height: auto">
+                          2
+                        </td>
+                        <td class="text-gray-bus-td p-3" style="height: auto">
+                          سبب الاعتراض
+                        </td>
+                        <td class="text-gray-bus-td p-3" style="height: auto">
+                          PDF
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- end another card -->
+
+          <!-- end data of contact card -->
+        </div>
+      </div>
+    </main>
+
+    <footer class="ds-footer">
+      <div class="ds-footer-container">
+        <div class="ds-footer-policy p-2 container">
+          <div class="p-2 bd-highlight m-0">
+            <!-- logo   -->
+            <img
+              src="../assets/img/ds-white-logo.svg"
+              style="width: 130px"
+              alt=""
+            />
+
+            <img
+              src="../assets/img/Saudi_Vision_2030_logo.svg.png"
+              style="width: 60px"
+              class="logo-white px-2"
+              alt=""
+            />
+          </div>
+
+          <div class="p-2 bd-highlight my-0">
+            <a href="">شروط الإستخدام</a>
+          </div>
+          <div class="p-2 bd-highlight">
+            <span>تطوير و تشغيل - وكالة التحول الرقمي</span>
+          </div>
+          <!-- copyright -->
+          <div class="p-2 bd-highlight">
+            <span> امانة العاصمة المقدسة © 2023 </span>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Bootstrap core JS-->
+    <script src="../assets/js/aos.js"></script>
+    <script
+      type="text/javascript"
+      src=" ../assets/js/bootstrap.bundle.min.js"
+    ></script>
+    <script src="../assets/js/nds-ds.js"></script>
+    <script src="../assets/js/highlight.min.js"></script>
+    <script src="../assets/js/main-js"></script>
+
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

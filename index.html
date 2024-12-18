@@ -1,0 +1,1314 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link rel="shortcut icon" type="image/png" href="assets/img/favicon.ico" />
+        <title>GOV.SA Design System</title>
+        <link href="assets/css/nds-ds.css" rel="stylesheet" />
+        <link href="assets/css/style.css" rel="stylesheet" />
+
+        <link rel="stylesheet" href="assets/css/bootstrap-icons.css" />
+
+        <body>
+            <!-- Start  navigation bar -->
+            <nav class="navbar navbar-expand-lg ds-header">
+                <div class="container">
+                    <div class="d-flex">
+                        <!-- Button for toggling the navigation menu -->
+                        <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse" data-target="#navb">
+                            <i class="ds-menu"></i>
+                            <!-- Menu icon -->
+                            <div class="md-hide text-primary">
+                                <i class="ds-x-circle"></i> اغلاق
+                                <!-- Close icon for small screens -->
+                            </div>
+                        </button>
+                        <a class="navbar-brand" href="#">
+                            <img src="assets/img/ds-white-logo.svg" alt="logo" class="green-nav-logo" />
+                            <!-- Green logo -->
+                            <img src="assets/img/logo.svg" class="light-nav-logo" alt="logo" />
+                            <!-- Light logo -->
+                        </a>
+                    </div>
+
+                    <div class="d-flex flex-row order-3" id="right-nav">
+                        <ul class="navbar-nav flex-row">
+                            <!-- List items for navigation -->
+                            <li class="nav-item mobile-hide">
+                                <a class="font-weight-bold nav-link" href="javascript:void(0)">English</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link with-icon position-relative" href="javascript:void(0)">
+                                    <i class="bi bi-bell-fill text-green"></i>
+                                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger text-white">
+                                        9+
+                                    </span>
+
+                                    <p class="mobile-hide">الإشعارات</p>
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link with-icon" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <img class="user-icon-green" src="assets/img/user-o.svg" alt="" />
+                                    <!-- User icon (green) -->
+                                    <img class="user-icon-white" src="assets/img/user-o-white.svg" alt="" />
+                                    <!-- User icon (white) -->
+                                    <p class="mobile-hide">رامي ابو لبن</p>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider" />
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="collapse navbar-collapse order-2" id="navb">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown4">
+                                    الرئيسية
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown4">
+                                    معاملاتي
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown4">
+                                    خدماتي
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- End navigation bar -->
+
+            <nav class="ds-nav">
+                <div class="container">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item">
+                            <a href="/">الصفحة الرئيسية</a>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="/"> المعاملات</a>
+                        </li>
+                    </ol>
+                </div>
+            </nav>
+
+            <main class="container-fluid mb-5 px-md-5 px-4">
+                <h2 class="text-secondary mt-5">Banners</h2>
+                <div class="ds-banners">
+                    <div class="d-flex">
+                        <i class="ds-alert-circle"></i>
+                        <a href="#">National reference portal for Covid-19</a>
+                    </div>
+                    <i class="ds-arrow-right"></i>
+                </div>
+                <h2 class="text-secondary mt-5">Onboarding Dropdown</h2>
+                <div class="ds-onboarding-dropdown">
+                    <div class="ds-onboarding-dropdown-header">
+                        <span>I am a</span>
+                        <button>
+                            <h3>Married without children</h3>
+                            <i class="ds-chevron-down"></i>
+                        </button>
+                    </div>
+                    <div class="ds-onboarding-dropdown-body">
+                        <div tabindex="0"><span>Student</span></div>
+                        <div tabindex="0"><span>Expat</span></div>
+                        <div tabindex="0"><span>Married without children</span></div>
+                        <div tabindex="0"><span>Single mother</span></div>
+                        <div tabindex="0"><span>Retired</span></div>
+                    </div>
+                </div>
+                <h2 class="text-secondary mt-5">Typography</h2>
+                <hr />
+                <div class="row">
+                    <div class="col-md-6">
+                        <h1 class="text-secondary">English:</h1>
+                        <div class="ds-display-font">H1 Headline 60px</div>
+                        <h2>H2 Headline 48px</h2>
+                        <h1>h1 Headline 40px</h1>
+                        <h2>h2 Headline 30px</h2>
+                        <h5>H5 Headline 24px</h5>
+                        <h3>h3 Headline 20px</h3>
+                        <p>Body 1 16px</p>
+                        <p class="font-body-2">Body 2 14px</p>
+                        <span>Breadcrumbs 12px </span><span class="font-lable d-block">Labels/tags 10px</span>
+                    </div>
+                    <div class="col-md-6" dir="rtl">
+                        <h1 class="text-secondary">عربي:</h1>
+                        <div class="ds-display-font">H1 عنوان 62px</div>
+                        <h2>H2 عنوان 50px</h2>
+                        <h1>h1 عنوان 42px</h1>
+                        <h2>h2 عنوان 32px</h2>
+                        <h5>H5 عنوان 26px</h5>
+                        <h3>h3 عنوان 22px</h3>
+                        <p>محتوى1 18px</p>
+                        <p class="font-body-2">محتوى2 16px</p>
+                        <div><span>عنوان فرعي 14px </span><span class="font-lable d-block">عنوان فرعي 12px</span></div>
+                    </div>
+                </div>
+                <h2 class="text-secondary mt-4">Icons</h2>
+                <hr />
+                <div class="row">
+                    <div class="col-md-12 mb-4">
+                        <p class="mb-0">Chatbot:</p>
+                        <img src="assets/img/chatbot.svg" alt="" />
+                    </div>
+                    <div class="col-md-12 mb-4">
+                        <p class="mb-0">Footer icons:</p>
+                        <i class="ds-zoom_in"></i> <i class="ds-zoom_out"></i> <i class="ds-vision"></i> <i class="ds-linkedin-2"></i> <i class="ds-youtube-2"></i> <i class="ds-twitter-2"></i> <i class="ds-facebook-2"></i>
+                        <i class="ds-volume-2"></i>
+                    </div>
+                    <div class="col-md-12 mb-4">
+                        <p class="mb-0">Life Experience:</p>
+                        <i class="ds-business_investments">
+                            <span class="path1"><span class="path2"></span></span>
+                        </i>
+                        <i class="ds-education_learning">
+                            <span class="path1"><span class="path2"></span></span>
+                        </i>
+                        <i class="ds-fileupload">
+                            <span class="path1"><span class="path2"></span></span>
+                        </i>
+                        <i class="ds-getting_married">
+                            <span class="path1"><span class="path2"></span></span>
+                        </i>
+                        <i class="ds-hajj_umbrah">
+                            <span class="path1"><span class="path2"></span></span>
+                        </i>
+                        <i class="ds-health_wellbeing">
+                            <span class="path1"><span class="path2"></span></span>
+                        </i>
+                        <i class="ds-housing_property">
+                            <span class="path1"><span class="path2"></span></span>
+                        </i>
+                        <i class="ds-life_in_saudi">
+                            <span class="path1"><span class="path2"></span></span>
+                        </i>
+                        <i class="ds-livingabroad">
+                            <span class="path1"><span class="path2"></span></span>
+                        </i>
+                        <i class="ds-nationalprofile">
+                            <span class="path1"><span class="path2"></span></span>
+                        </i>
+                        <i class="ds-publicsecurity_justice">
+                            <span class="path1"><span class="path2"></span></span>
+                        </i>
+                        <i class="ds-report_complaints">
+                            <span class="path1">
+                                <span class="path2">
+                                    <span class="path3">
+                                        <span class="path4">
+                                            <span class="path5">
+                                                <span class="path6">
+                                                    <span class="path7"><span class="path8"></span></span>
+                                                </span>
+                                            </span>
+                                        </span>
+                                    </span>
+                                </span>
+                            </span>
+                        </i>
+                        <i class="ds-work_career_retirement">
+                            <span class="path1"><span class="path2"></span></span>
+                        </i>
+                    </div>
+                    <div class="col-md-12">
+                        <p class="mb-0">Icons:</p>
+                        <i class="ds-activity"></i> <i class="ds-alert-circle"></i> <i class="ds-alert-octagon"></i> <i class="ds-alert-triangle"></i> <i class="ds-align-center"></i> <i class="ds-align-justify"></i>
+                        <i class="ds-align-left"></i> <i class="ds-align-right"></i> <i class="ds-anchor"></i> <i class="ds-aperture"></i> <i class="ds-archive"></i> <i class="ds-arrow-down-circle"></i>
+                        <i class="ds-arrow-down-left"></i>
+                        <i class="ds-arrow-down-right"></i> <i class="ds-arrow-down"></i> <i class="ds-arrow-left-circle"></i> <i class="ds-arrow-left"></i> <i class="ds-arrow-right-circle"></i> <i class="ds-arrow-right"></i>
+                        <i class="ds-arrow-up-circle"></i> <i class="ds-arrow-up-left"></i> <i class="ds-arrow-up-right"></i> <i class="ds-arrow-up"></i> <i class="ds-at-sign"></i> <i class="ds-award"></i> <i class="ds-bar-chart-2"></i>
+                        <i class="ds-bar-chart"></i> <i class="ds-battery-charging"></i> <i class="ds-battery"></i> <i class="ds-bell-off"></i> <i class="ds-bluetooth"></i> <i class="ds-bold"></i> <i class="ds-book-open"></i>
+                        <i class="ds-book"></i> <i class="ds-bookmark"></i> <i class="ds-box"></i> <i class="ds-briefcase"></i> <i class="ds-camera-off"></i> <i class="ds-camera"></i> <i class="ds-cast"></i> <i class="ds-check-circle"></i>
+                        <i class="ds-check-square"></i> <i class="ds-check"></i> <i class="ds-chevron-down"></i> <i class="ds-chevron-left"></i> <i class="ds-chevron-right"></i> <i class="ds-chevron-up"></i>
+                        <i class="ds-chevrons-down"></i> <i class="ds-chevrons-left"></i> <i class="ds-chevrons-right"></i> <i class="ds-chevrons-up"></i> <i class="ds-chrome"></i> <i class="ds-circle"></i> <i class="ds-clipboard"></i>
+                        <i class="ds-clock"></i> <i class="ds-cloud-drizzle"></i> <i class="ds-cloud-lightning"></i> <i class="ds-cloud-off"></i> <i class="ds-cloud-rain"></i> <i class="ds-cloud-snow"></i> <i class="ds-cloud"></i>
+                        <i class="ds-code"></i> <i class="ds-codepen"></i> <i class="ds-codesandbox"></i> <i class="ds-coffee"></i> <i class="ds-columns"></i> <i class="ds-Combined-Shape"></i> <i class="ds-command"></i>
+                        <i class="ds-compass"></i> <i class="ds-copy"></i> <i class="ds-corner-down-left"></i>
+                        <i class="ds-corner-down-right"></i>
+                        <i class="ds-corner-left-down"></i> <i class="ds-corner-left-up"></i>
+                        <i class="ds-corner-right-down"></i>
+                        <i class="ds-corner-right-up"></i> <i class="ds-corner-up-left"></i> <i class="ds-corner-up-right"></i> <i class="ds-cpu"></i> <i class="ds-credit-card"></i> <i class="ds-crop"></i> <i class="ds-crosshair"></i>
+                        <i class="ds-database"></i> <i class="ds-delete"></i> <i class="ds-disc"></i> <i class="ds-dollar-sign"></i> <i class="ds-done"></i> <i class="ds-download-cloud"></i> <i class="ds-download"></i>
+                        <i class="ds-droplet"></i> <i class="ds-edit-2"></i> <i class="ds-edit-3"></i> <i class="ds-edit-4"></i> <i class="ds-edit"></i> <i class="ds-export"></i> <i class="ds-external-link"></i> <i class="ds-eye-off"></i>
+                        <i class="ds-eye"></i> <i class="ds-facebook"></i> <i class="ds-fast-forward"></i> <i class="ds-feather"></i> <i class="ds-figma"></i> <i class="ds-file-minus"></i> <i class="ds-file-plus"></i>
+                        <i class="ds-file-text"></i> <i class="ds-file"></i> <i class="ds-film"></i> <i class="ds-filter-2"></i> <i class="ds-filter"></i> <i class="ds-flag"></i> <i class="ds-folder-minus"></i>
+                        <i class="ds-folder-plus"></i> <i class="ds-folder"></i> <i class="ds-framer"></i> <i class="ds-frown"></i> <i class="ds-gift"></i> <i class="ds-git-branch"></i> <i class="ds-git-commit"></i>
+                        <i class="ds-git-merge"></i> <i class="ds-git-pull-request"></i> <i class="ds-github"></i> <i class="ds-gitlab"></i> <i class="ds-globe"></i> <i class="ds-grid"></i> <i class="ds-hard-drive"></i>
+                        <i class="ds-hash"></i> <i class="ds-headphones"></i> <i class="ds-heart"></i> <i class="ds-help-circle"></i> <i class="ds-hexagon"></i> <i class="ds-home"></i> <i class="ds-image"></i> <i class="ds-inbox"></i>
+                        <i class="ds-info"></i> <i class="ds-instagram"></i> <i class="ds-italic"></i> <i class="ds-key"></i> <i class="ds-layout"></i> <i class="ds-life-buoy"></i> <i class="ds-link-2"></i> <i class="ds-link-icon"></i>
+                        <i class="ds-linkedin"></i> <i class="ds-list"></i> <i class="ds-loader"></i> <i class="ds-log-in"></i> <i class="ds-log-out"></i> <i class="ds-mail"></i> <i class="ds-map-pin"></i> <i class="ds-map"></i>
+                        <i class="ds-maximize-2"></i> <i class="ds-maximize"></i> <i class="ds-meh"></i> <i class="ds-menu"></i> <i class="ds-message-circle"></i> <i class="ds-message-square"></i> <i class="ds-mic-off"></i>
+                        <i class="ds-mic"></i> <i class="ds-minimize-2"></i> <i class="ds-minimize"></i> <i class="ds-minus-circle"></i> <i class="ds-minus-square"></i> <i class="ds-minus"></i> <i class="ds-monitor"></i>
+                        <i class="ds-moon"></i> <i class="ds-more-horizontal"></i> <i class="ds-more-vertical"></i> <i class="ds-mouse-pointer"></i> <i class="ds-move"></i> <i class="ds-music"></i> <i class="ds-navigation-2"></i>
+                        <i class="ds-navigation"></i> <i class="ds-notification"></i> <i class="ds-octagon"></i> <i class="ds-package"></i> <i class="ds-paperclip"></i> <i class="ds-pause-circle"></i> <i class="ds-pause"></i>
+                        <i class="ds-pen-tool"></i> <i class="ds-percent"></i> <i class="ds-phone-call"></i> <i class="ds-phone-forwarded"></i> <i class="ds-phone-incoming"></i> <i class="ds-phone-missed"></i> <i class="ds-phone-off"></i>
+                        <i class="ds-phone-outgoing"></i> <i class="ds-phone"></i> <i class="ds-pie-chart"></i> <i class="ds-play-circle"></i> <i class="ds-play"></i> <i class="ds-plus-circle"></i> <i class="ds-plus-square"></i>
+                        <i class="ds-plus"></i> <i class="ds-pocket"></i> <i class="ds-power"></i> <i class="ds-printer"></i> <i class="ds-radio"></i> <i class="ds-refresh-ccw"></i> <i class="ds-refresh-cw"></i> <i class="ds-repeat"></i>
+                        <i class="ds-rewind"></i> <i class="ds-right"></i> <i class="ds-rotate-ccw"></i> <i class="ds-rotate-cw"></i> <i class="ds-rss"></i> <i class="ds-save"></i> <i class="ds-scissors"></i> <i class="ds-search"></i>
+                        <i class="ds-send"></i> <i class="ds-server"></i> <i class="ds-settings"></i> <i class="ds-share-2"></i> <i class="ds-share"></i> <i class="ds-shield-off"></i> <i class="ds-shield"></i>
+                        <i class="ds-shopping-bag"></i> <i class="ds-shopping-cart"></i> <i class="ds-shuffle"></i> <i class="ds-sidebar"></i> <i class="ds-skip-back"></i> <i class="ds-skip-forward"></i> <i class="ds-slack"></i>
+                        <i class="ds-slash"></i> <i class="ds-sliders"></i> <i class="ds-smartphone"></i> <i class="ds-smile"></i> <i class="ds-speaker"></i> <i class="ds-square"></i> <i class="ds-star"></i> <i class="ds-stop-circle"></i>
+                        <i class="ds-success"></i> <i class="ds-sun"></i> <i class="ds-sunrise"></i> <i class="ds-sunset"></i> <i class="ds-tablet"></i> <i class="ds-tag"></i> <i class="ds-target"></i> <i class="ds-terminal"></i>
+                        <i class="ds-thermometer"></i> <i class="ds-thumbs-down"></i> <i class="ds-thumbs-up"></i> <i class="ds-toggle-left"></i> <i class="ds-toggle-right"></i> <i class="ds-tool"></i> <i class="ds-trash-2"></i>
+                        <i class="ds-trash"></i> <i class="ds-trello"></i> <i class="ds-trending-down"></i> <i class="ds-trending-up"></i> <i class="ds-triangle"></i> <i class="ds-truck"></i> <i class="ds-tv"></i> <i class="ds-twitch"></i>
+                        <i class="ds-twitter"></i> <i class="ds-type"></i> <i class="ds-umbrella"></i> <i class="ds-underline"></i> <i class="ds-unlock"></i> <i class="ds-upload-cloud"></i> <i class="ds-upload"></i>
+                        <i class="ds-user-check"></i> <i class="ds-user-minus"></i> <i class="ds-user"></i> <i class="ds-user-plus"></i> <i class="ds-user-x"></i> <i class="ds-user"></i> <i class="ds-video-off"></i>
+                        <i class="ds-video"></i> <i class="ds-voicemail"></i> <i class="ds-volume-1"></i> <i class="ds-volume-2"></i> <i class="ds-volume-x"></i> <i class="ds-volume"></i> <i class="ds-watch"></i>
+                        <i class="ds-wifi-off"></i> <i class="ds-wifi"></i> <i class="ds-wind"></i> <i class="ds-x-circle"></i> <i class="ds-x-octagon"></i> <i class="ds-x-square"></i> <i class="ds-x"></i> <i class="ds-youtube"></i>
+                        <i class="ds-zap-off"></i> <i class="ds-zap"></i> <i class="ds-zoom-in"></i> <i class="ds-zoom-out"></i>
+                        <i class="ds-zoom"></i>
+                    </div>
+                </div>
+                <h2 class="text-secondary mt-4">Colors</h2>
+                <hr />
+                <h1>Primary colors:</h1>
+                <div class="row">
+                    <div class="col-md-2">
+                        <div class="bg-primary text-white box text-center p-2 m-2">
+                            #3ca078
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="bg-green-shade text-white box text-center p-2 m-2">
+                            #066058
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="bg-secondary text-white box text-center p-2 m-2">
+                            #160f3e
+                        </div>
+                    </div>
+                </div>
+                <h1>System colors:</h1>
+                <div class="row">
+                    <div class="col-md-2">
+                        <div class="bg-success text-white box text-center p-2 m-2">
+                            #006604
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="bg-info text-white box text-center p-2 m-2">#339eec</div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="bg-warning text-white box text-center p-2 m-2">
+                            #ee8437
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="bg-danger text-white box text-center p-2 m-2">
+                            #af0818
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="bg-orange text-white box text-center p-2 m-2">
+                            #FD7E14
+                        </div>
+                    </div>
+                </div>
+                <h1>Neutral colors:</h1>
+                <div class="row">
+                    <div class="col-md-2">
+                        <div class="bg-black text-white box text-center p-2 m-2">#000000</div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="bg-gray-shade text-white box text-center p-2 m-2">
+                            #242424
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="bg-gray text-white box text-center p-2 m-2">#323232</div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="bg-gray-tint text-white box text-center p-2 m-2">
+                            #757575
+                        </div>
+                    </div>
+                </div>
+                <h2 class="text-secondary mt-4">Accordion:</h2>
+                <hr />
+                <div class="accordion ds-accordion" id="ds-accordionExample">
+                    <div class="card">
+                        <button id="ds-headingOne" class="btn card-header collapsed" type="button" data-toggle="collapse" data-target="#ds-collapseOne" aria-expanded="false" aria-controls="ds-collapseOne">
+                            Collapsible Group Item #1
+                        </button>
+                        <div id="ds-collapseOne" class="collapse" aria-labelledby="ds-headingOne" data-parent="#ds-accordionExample">
+                            <div class="card-body">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+                                Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
+                                proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <button id="ds-headingTwo" class="btn card-header collapsed" type="button" data-toggle="collapse" data-target="#ds-collapseTwo" aria-expanded="false" aria-controls="ds-collapseTwo">
+                            Collapsible Group Item #2
+                        </button>
+                        <div id="ds-collapseTwo" class="collapse" aria-labelledby="ds-headingTwo" data-parent="#ds-accordionExample">
+                            <div class="card-body">
+                                Some placeholder content for the second accordion panel. This panel is hidden by default.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <button id="ds-headingThree" class="btn card-header collapsed" type="button" data-toggle="collapse" data-target="#ds-collapseThree" aria-expanded="false" aria-controls="ds-collapseThree">
+                            Collapsible Group Item #3
+                        </button>
+                        <div id="ds-collapseThree" class="collapse" aria-labelledby="ds-headingThree" data-parent="#ds-accordionExample">
+                            <div class="card-body">
+                                And lastly, the placeholder content for the third and final accordion panel. This panel is hidden by default.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h2 class="text-secondary mt-4">Button:</h2>
+                <hr />
+                <div class="row">
+                    <div class="col-md-12 mt-4">
+                        <h5>Primary button:</h5>
+                        <button type="button" class="btn btn-primary">Action</button>
+                        <span>Disabled button >>>> </span>
+                        <button type="button" class="btn btn-primary" disabled="disabled">
+                            Action
+                        </button>
+                    </div>
+                    <div class="col-md-12 mt-5">
+                        <h5>Secondary button:</h5>
+                        <button type="button" class="btn btn-secondary">Action</button>
+                        <span>Disabled button >>>> </span>
+                        <button type="button" class="btn btn-secondary" disabled="disabled">
+                            Action
+                        </button>
+                    </div>
+                    <div class="col-md-12 mt-4">
+                        <h5>Filter button:</h5>
+                        <button type="button" class="btn ds-btn-filter">Filter</button>
+                        <span>Active filter >>>> </span>
+                        <button type="button" class="btn ds-btn-filter active">
+                            Filter
+                        </button>
+                    </div>
+                </div>
+                <div class="row" dir="rtl">
+                    <div class="col-md-12 mt-4">
+                        <h5>Primary button:</h5>
+                        <button type="button" class="btn btn-primary">عنوان</button>
+                        <span>Disabled button >>>> </span>
+                        <button type="button" class="btn btn-primary" disabled="disabled">
+                            عنوان
+                        </button>
+                    </div>
+                    <div class="col-md-12 mt-5">
+                        <h5>Secondary button:</h5>
+                        <button type="button" class="btn btn-secondary">عنوان</button>
+                        <span>Disabled button >>>> </span>
+                        <button type="button" class="btn btn-secondary" disabled="disabled">
+                            عنوان
+                        </button>
+                    </div>
+                    <div class="col-md-12 mt-4">
+                        <h5>Filter button:</h5>
+                        <button type="button" class="btn ds-btn-filter">عنوان</button>
+                        <span>Active filter >>>> </span><button type="button" class="btn ds-btn-filter active">عنوان</button>
+                    </div>
+                </div>
+                <h2 class="text-secondary mt-4">Link:</h2>
+                <hr />
+                <div class="row">
+                    <div class="col-md-2">
+                        <a href="#" class="ds-link">Real estate offices</a>
+                    </div>
+                    <div class="col-md-2">
+                        <a href="#" class="ds-link disabled">Real estate offices</a>
+                    </div>
+                    <div class="col-md-2"><a href="#" class="ds-link">Real estate offices</a><i class="ds-external-link link"></i></div>
+                    <div class="col-md-2"><a href="#" class="ds-link disabled">Real estate offices</a><i class="ds-external-link link"></i></div>
+                    <div class="col-md-2"><a href="#" class="ds-link">Real estate offices</a><i class="ds-arrow-right link"></i></div>
+                    <div class="col-md-2"><a href="#" class="ds-link disabled">Real estate offices</a><i class="ds-arrow-right link"></i></div>
+                </div>
+                <div class="row mt-3" dir="rtl">
+                    <div class="col-md-2"><a href="#" class="ds-link">اضغط هنا</a></div>
+                    <div class="col-md-2">
+                        <a href="#" class="ds-link disabled">اضغط هنا</a>
+                    </div>
+                    <div class="col-md-2"><a href="#" class="ds-link">اضغط هنا</a><i class="ds-external-link link"></i></div>
+                    <div class="col-md-2"><a href="#" class="ds-link disabled">اضغط هنا</a><i class="ds-external-link link"></i></div>
+                    <div class="col-md-2"><a href="#" class="ds-link">اضغط هنا</a><i class="ds-arrow-right link"></i></div>
+                    <div class="col-md-2"><a href="#" class="ds-link disabled">اضغط هنا</a><i class="ds-arrow-right link"></i></div>
+                </div>
+                <h2 class="text-secondary mt-4">Navigation menu:</h2>
+                <hr />
+                <div class="row">
+                    <div class="col-md-3">
+                        <h3 class="mb-0">7 stages for Building a house</h3>
+                        <div class="ds-navigation-menu">
+                            <ul>
+                                <li class="start-circle"></li>
+                                <li>Awareness</li>
+                                <li class="active">Search</li>
+                                <li>Evaluate</li>
+                                <li>Buy</li>
+                                <li>Build</li>
+                                <li>Transfer</li>
+                                <li>Manage</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 offset-md-6" dir="rtl">
+                        <h3 class="mb-0">v مراحل لبناء منزل</h3>
+                        <div class="ds-navigation-menu">
+                            <ul>
+                                <li class="start-circle"></li>
+                                <li>الوعي</li>
+                                <li class="active">بحث</li>
+                                <li>تقيم</li>
+                                <li>شراء</li>
+                                <li>بناء</li>
+                                <li>نقل</li>
+                                <li>يدير</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <h2 class="text-secondary mt-4">Tabs:</h2>
+                <hr />
+                <div class="ds-tab-accordion">
+                    <ul class="nav nav-tabs ds-tabs" role="tablist">
+                        <li class="nav-item">
+                            <a id="tab-A" href="#t1" class="nav-link active" data-toggle="tab" role="tab">STEPS</a>
+                            <div class="ds-tabs--border"></div>
+                        </li>
+                        <li class="nav-item">
+                            <a id="tab-B" href="#t2" class="nav-link" data-toggle="tab" role="tab">PREREQUISITES</a>
+                            <div class="ds-tabs--border"></div>
+                        </li>
+                        <li class="nav-item">
+                            <a id="tab-C" href="#t3" class="nav-link" data-toggle="tab" role="tab">MORE INFORMATION</a>
+                            <div class="ds-tabs--border"></div>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div id="t1" class="tab-pane active">
+                            These steps help you find the real estate offices that will help you choose the right plot, and complete its purchase transaction.
+                        </div>
+                        <div id="t2" class="tab-pane">
+                            Complete the procedures and the purchase transaction, and document the contract to obtain the property deed.
+                        </div>
+                        <div id="t3" class="tab-pane">
+                            If you want to know the real estate indicators and their average prices for various cities and districts in the Kingdom, visit the real estate indicators page in the open data of the Ministry
+                        </div>
+                    </div>
+                    <div id="content" class="tab-content" role="tablist"></div>
+                </div>
+                <h2 class="text-secondary mt-4">Navigation Cards:</h2>
+                <hr />
+                <div class="card ds-navigation-card">
+                    <div class="nav-divider"></div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="nav-left">
+                                <div class="card-text">
+                                    <div class="nav-title">Previous Stage</div>
+                                    <a href="#"><i class="ds-arrow-left"></i><span class="nav-page">Awareness</span></a>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="nav-right">
+                                    <div class="nav-title-right">Next Stage</div>
+                                    <a href="#"><span class="nav-page-right">Search</span><i class="ds-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr />
+                <div class="card ds-navigation-card single-card">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col">
+                                <div class="nav-left">
+                                    <div class="nav-title">Previous Stage</div>
+                                    <a href="#"><i class="ds-arrow-left"></i><span class="nav-page">Awareness</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr />
+                <div class="card ds-navigation-card single-card">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col">
+                                <div class="nav-right">
+                                    <div class="nav-title-right">Next Stage</div>
+                                    <a href="#"><span class="nav-page-right">Search</span><i class="ds-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h2 class="text-secondary mt-4">Side Navigation:</h2>
+                <hr />
+                <div class="ds-side-navigation">
+                    <ul>
+                        <li class="start-circle"></li>
+                        <li class="ds-collapse">
+                            <div class="ds-side-navigation__card" id="accordionExample">
+                                <div id="headingOne">
+                                    <div class="d-md-flex justify-content-between">
+                                        <button class="ds-collapse-bnt">
+                                            Collapsible Group Item #1
+                                        </button>
+                                        <div>
+                                            <button type="button" class="btn btn-primary">
+                                                Action
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="journey-info-row d-flex">
+                                        <div class="journey-info d-flex">
+                                            <div class="journey-info-description px-2"><i class="ds-clock"></i> Test</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                    <p class="ds-side-navigation-content px-2">
+                                        To search and know how to choose the right available plot, visiting a number of real estate offices in the selected district, and know the plots offered for sale and their prices. The Real estate
+                                        indicators provided by the Ministry of Justice can be used to determine the yearly average prices and how it differs from each district.
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="ds-collapse">
+                            <div class="ds-side-navigation__card" id="accordionExample2">
+                                <div id="headingTwo">
+                                    <div class="d-md-flex justify-content-between">
+                                        <button class="ds-collapse-bnt">
+                                            Collapsible Group Item #1
+                                        </button>
+                                        <div>
+                                            <button type="button" class="btn btn-primary">
+                                                Action
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="journey-info-row d-flex">
+                                        <div class="journey-info d-flex px-2">
+                                            <div class="journey-info-description"><i class="ds-clock"></i> Test</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample2">
+                                    <p class="ds-side-navigation-content px-2">
+                                        To search and know how to choose the right available plot, visiting a number of real estate offices in the selected district, and know the plots offered for sale and their prices. The Real estate
+                                        indicators provided by the Ministry of Justice can be used to determine the yearly average prices and how it differs from each district.
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="end-circle"></li>
+                    </ul>
+                </div>
+                <h2 class="text-secondary mt-4">Cards:</h2>
+                <hr />
+                <h5 class="mt-4">Life Experience Card:</h5>
+                <div class="d-flex flex-wrap">
+                    <div class="ds-life-experience-card">
+                        <div class="header-section" tabindex="0">
+                            <img src="assets/img/ds-housing_property.svg" />
+                            <img src="assets/img/ds-housing_property_white.svg" />
+                            <div class="content-section">
+                                <h3>Education & Learning</h3>
+                                <button class="see-more-bnt">See more <i class="ds-chevron-down"></i></button>
+                            </div>
+                        </div>
+                        <div class="body-section">
+                            <a href="#">Building a house <i class="ds-chevron-right"></i></a>
+                            <a href="#">Buying a house <i class="ds-chevron-right"></i></a>
+                            <a href="#">Renting a house <i class="ds-chevron-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="ds-life-experience-card comeing-soon">
+                        <div class="header-section">
+                            <i class="ds-hajj_umbrah">
+                                <span class="path1"><span class="path2"></span></span>
+                            </i>
+                            <div class="content-section text-black-50">
+                                <h3>Hajj & Umrah</h3>
+                                <p>Comeing soon</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h5 class="mt-5">Live Event Card:</h5>
+                <div class="ds-live-event-card" tabindex="0">
+                    <h3>Study abroad</h3>
+                    <p>
+                        A journey which enables foreign exchange students to modify their study plan
+                    </p>
+                    <div class="ds-card-footer">
+                        <button class="ds-tag--green">Housing & Propriety</button>
+                    </div>
+                </div>
+                <h5 class="mt-5">Service Card</h5>
+                <div class="ds-service-card" tabindex="0">
+                    <h3>Reservation of housing units under construction</h3>
+                    <p>
+                        The service allows beneficiaries to view the details of projects of housing units under construction, and to complete the reservation procedures electronically without the need to visit the sales site.
+                    </p>
+                    <div class="ds-card-footer">
+                        <button class="ds-tag--green">Housing & Propriety</button>
+                        <button class="ds-tag--violet">Building a house</button>
+                        <button class="ds-tag--gray">The holy capital municipality</button>
+                    </div>
+                </div>
+                <h5 class="mt-5">Card Reports & Complaints:</h5>
+                <div class="ds-card-reports-complaints" tabindex="0">
+                    <img src="assets/img/report_complaints.svg" alt="" />
+                    <div class="card-container">
+                        <h3>Report &complaints</h3>
+                        <p>Perform the Eligibility service, providing the data required.</p>
+                        <button type="button" class="btn btn-primary">Send message</button>
+                    </div>
+                </div>
+                <h5 class="mt-5">Highlight w/Image:</h5>
+                <div class="ds-highlight-card" tabindex="0">
+                    <img src="assets/img/online-edu.png" alt="" />
+                    <div class="ds-card-body">
+                        <h3>Saudi Arabia's G20 Presidency</h3>
+                        <p>
+                            Saudi Arabia's G20 Presidency The Saudi G20 Presidency began from 1 December 2019 and will end on 30 November 2020.
+                        </p>
+                    </div>
+                </div>
+                <h5 class="mt-5">Service Results:</h5>
+                <div class="ds-service-results" tabindex="0">
+                    <span>Service</span>
+                    <h3>Register plans, lots and housing units</h3>
+                    <p>
+                        An e-service provided by the Ministry Of Justice, which enables the owners of property plans and housing units to register property plots and housing units through the e-portal.
+                    </p>
+                    <div class="ds-card-footer">
+                        <button class="ds-tag--green">Housing & Propriety</button>
+                        <button class="ds-tag--violet">Building a house</button>
+                        <button class="ds-tag--gray">The holy capital municipality</button>
+                    </div>
+                </div>
+                <h5 class="mt-5">Life Experience Card:</h5>
+                <div class="ds-life-experience-card">
+                    <div class="header-section" tabindex="0">
+                        <img src="assets/img/ds-housing_property.svg" />
+                        <img src="assets/img/ds-housing_property_white.svg" />
+                        <div class="content-section">
+                            <h3>الإسكان والممتلكات</h3>
+                            <button class="see-more-bnt">عرض المزيد <i class="ds-chevron-down"></i></button>
+                        </div>
+                    </div>
+                    <div class="body-section">
+                        <a href="#">بناء منزل <i class="ds-chevron-right"></i></a>
+                        <a href="#">شراء منزل <i class="ds-chevron-right"></i></a>
+                        <a href="#">استئجار منزل <i class="ds-chevron-right"></i></a>
+                    </div>
+                </div>
+                <h5 class="mt-5">Live Event Card:</h5>
+                <div class="ds-live-event-card" tabindex="0">
+                    <h3>بناء منزل</h3>
+                    <p>
+                        من أجل بناء منزل أحلامك، ستساعدك هذه الرحلة على معرفة الآليات الخاصه بذلك.
+                    </p>
+                    <div class="ds-card-footer">
+                        <button class="ds-tag--green">الإسكان والممتلكات</button>
+                    </div>
+                </div>
+                <h5 class="mt-5">Service Card</h5>
+                <div class="ds-service-card" tabindex="0">
+                    <h3>حجز أرض سكنية</h3>
+                    <p>
+                        تتيح الخدمة للمستفيدين الاطلاع على تفاصيل الأراضي، واستكمال إجراءات الحجز إلكترونياً، دون الحاجة لزيارة موقع المبيعات.
+                    </p>
+                    <div class="ds-card-footer">
+                        <button class="ds-tag--green">الإسكان والممتلكات</button>
+                        <button class="ds-tag--violet">بناء منزل</button>
+                        <button class="ds-tag--gray">وزارة الحج والعمرة</button>
+                    </div>
+                </div>
+                <h5 class="mt-5">Card Reports & Complaints:</h5>
+                <div class="ds-card-reports-complaints" tabindex="0">
+                    <img src="assets/img/report_complaints.svg" alt="" />
+                    <div class="card-container">
+                        <h3>البلاغات والشكاوى</h3>
+                        <p>أي استفسار عن الخدمات الحكومية، يرجى تعبئة المعلومات المطلوبة</p>
+                        <button type="button" class="btn btn-primary">إرسال</button>
+                    </div>
+                </div>
+                <h5 class="mt-5">Highlight w/Image:</h5>
+                <div class="ds-highlight-card" tabindex="0">
+                    <img src="assets/img/online-edu.png" alt="" />
+                    <div class="ds-card-body">
+                        <h3>التعلم عن بعد في المملكة العربية السعودية</h3>
+                        <p>
+                            التعلم عن بعد في المملكة العربية السعودية. يتضمن دليل التعلم عن بعد في المملكة العربية السعودية، وعلى أدلة تدعم الفصول الدراسية.
+                        </p>
+                    </div>
+                </div>
+                <h5 class="mt-5">Service Results:</h5>
+                <div class="ds-service-results" tabindex="0">
+                    <span>خدمة</span>
+                    <h3>تسجيل المخططات وقطع الأراضي والوحدات السكنية</h3>
+                    <p>
+                        خدمة إلكترونية تقدمها وزارة العدل تمكن أصحاب المخططات والوحدات السكنية من تسجيل قطع الأراضي والوحدات السكنية عبر البوابة الإلكترونية.
+                    </p>
+                    <div class="ds-card-footer">
+                        <button class="ds-tag--green">الإسكان والممتلكات</button>
+                        <button class="ds-tag--violet">بناء منزل</button>
+                        <button class="ds-tag--gray">وزارة الحج والعمرة</button>
+                    </div>
+                </div>
+                <h2 class="text-secondary mt-4">Selection controls:</h2>
+                <hr />
+                <h5 class="mt-5">Checkbox:</h5>
+                <div class="mb-3">
+                    <input type="checkbox" class="ds-checkbox-input" name="checkboxDefault" id="checkboxDefault1" />
+                    <label for="checkboxDefault1" class="ds-checkbox-label"><span class="ds-checkbox-button" for="checkboxDefault1"></span> Family & Childcare</label>
+                </div>
+                <div class="mb-3">
+                    <input type="checkbox" class="ds-checkbox-input" name="checkboxDefault" id="checkboxDefault2" />
+                    <label for="checkboxDefault2" class="ds-checkbox-label"><span class="ds-checkbox-button"></span> Family & Childcare</label>
+                    <span class="ds-error-message">! Error message</span>
+                </div>
+                <div class="mb-4">
+                    <input type="checkbox" class="ds-checkbox-input" name="checkboxDefault" id="checkboxDefault3" checked="checked" disabled="disabled" />
+                    <label for="checkboxDefault3" class="ds-checkbox-label"><span class="ds-checkbox-button"></span> Family & Childcare</label>
+                </div>
+                <div class="mb-4">
+                    <input type="checkbox" class="ds-checkbox-input" name="checkboxDefault" id="checkboxDefault4" disabled="disabled" />
+                    <label for="checkboxDefault4" class="ds-checkbox-label"><span class="ds-checkbox-button"></span> Family & Childcare</label>
+                </div>
+                <h5 class="mt-5">Radio Button:</h5>
+                <div class="mb-3">
+                    <input type="radio" class="ds-radio-input" name="RadioDefault" id="RadioDefault1" />
+                    <label for="RadioDefault1" class="ds-radio-label"><span class="ds-radio-button"></span> Family & Childcare</label>
+                </div>
+                <div class="mb-3">
+                    <input type="radio" class="ds-radio-input" name="RadioDefault2" id="RadioDefault2" />
+                    <label for="RadioDefault2" class="ds-radio-label"><span class="ds-radio-button"></span> Family & Childcare</label>
+                    <span class="ds-error-message">! Error message</span>
+                </div>
+                <div class="mb-4">
+                    <input type="radio" class="ds-radio-input" name="RadioDisabled3" id="RadioDisableds" checked="checked" disabled="disabled" />
+                    <label for="RadioDisableds" class="ds-radio-label"><span class="ds-radio-button"></span> Family & Childcare</label>
+                </div>
+                <div class="mb-4">
+                    <input type="radio" class="ds-radio-input" name="RadioDisabled4" id="RadioDisabled" disabled="disabled" />
+                    <label for="RadioDisabled" class="ds-radio-label"><span class="ds-radio-button"></span> Family & Childcare</label>
+                </div>
+                <h5>Onboarding Radio Button:</h5>
+                <div class="ds-onboarding">
+                    <input type="radio" class="ds-onboarding-radio-input" name="RadioDefaultO" id="RadioDefaultO1" />
+                    <label for="RadioDefaultO1" class="ds-onboarding-radio-label"><span class="ds-onboarding-radio-button"></span> University Student</label>
+                </div>
+                <h2 class="text-secondary mt-4">Filters:</h2>
+                <hr />
+                <div class="ds-filters">
+                    <button type="button" class="btn ds-filters-header"><i class="ds-sliders"></i> <span>Search filters</span></button>
+                    <div class="ds-filters-body d-none">
+                        <div class="ds-filters-card">
+                            <button type="button" class="ds-filters-card-header">Life Experiences <i class="ds-chevron-down"></i></button>
+                            <div class="ds-filters-card-body">
+                                <div class="mb-3">
+                                    <input type="checkbox" class="ds-checkbox-input" name="checkboxFilter" id="checkboxFilter1" />
+                                    <label for="checkboxFilter1" class="ds-checkbox-label"><span class="ds-checkbox-button"></span> Family & Childcare</label>
+                                </div>
+                                <div class="mb-3">
+                                    <input type="checkbox" class="ds-checkbox-input" name="checkboxFilter" id="checkboxFilter2" />
+                                    <label for="checkboxFilter2" class="ds-checkbox-label"><span class="ds-checkbox-button"></span> Health & Wellbeing</label>
+                                </div>
+                                <div class="mb-3">
+                                    <input type="checkbox" class="ds-checkbox-input" name="checkboxFilter" id="checkboxFilter3" />
+                                    <label for="checkboxFilter3" class="ds-checkbox-label"><span class="ds-checkbox-button"></span> Housing & Property</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ds-filters-card">
+                            <button type="button" class="ds-filters-card-header">Type <i class="ds-chevron-down"></i></button>
+                            <div class="ds-filters-card-body">
+                                <div class="mb-3">
+                                    <input type="checkbox" class="ds-checkbox-input" name="checkboxType" id="checkboxType" />
+                                    <label for="checkboxType" class="ds-checkbox-label"><span class="ds-checkbox-button"></span> Label 1</label>
+                                </div>
+                                <div class="mb-3">
+                                    <input type="checkbox" class="ds-checkbox-input" name="checkboxType" id="checkboxType2" />
+                                    <label for="checkboxType2" class="ds-checkbox-label"><span class="ds-checkbox-button"></span> Label 2</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ds-filters-card">
+                            <button type="button" class="ds-filters-card-header">Persona <i class="ds-chevron-down"></i></button>
+                            <div class="ds-filters-card-body">
+                                <div class="mb-3">
+                                    <input type="checkbox" class="ds-checkbox-input" name="checkboxPersona" id="checkboxPersona" />
+                                    <label for="checkboxPersona" class="ds-checkbox-label"><span class="ds-checkbox-button"></span> Label 1</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ds-filters-card">
+                            <button type="button" class="ds-filters-card-header">Agency <i class="ds-chevron-down"></i></button>
+                            <div class="ds-filters-card-body">
+                                <div class="mb-3">
+                                    <input type="checkbox" class="ds-checkbox-input" name="checkboxAgency" id="checkboxAgency" />
+                                    <label for="checkboxAgency" class="ds-checkbox-label"><span class="ds-checkbox-button"></span> Label 1</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h2 class="text-secondary mt-4">Text input:</h2>
+                <hr />
+                <div class="mb-4">
+                    <label for="label9" class="ds-input-label">Optional Text Input</label>
+                    <input class="ds-text-input" id="label9" placeholder="Write something" />
+                </div>
+                <div class="mb-4">
+                    <label for="label2" class="ds-input-label">Mandatory Text Input *</label>
+                    <input class="ds-text-input" id="label2" placeholder="Write something" required />
+                    <span class="ds-hint-message">Hint</span>
+                </div>
+                <div class="mb-4">
+                    <label for="label3" class="ds-input-label">Error Text Input *</label>
+                    <input class="ds-text-input is-invalid" id="label3" placeholder="Write something" required />
+                    <span class="ds-error-message">! Error message</span>
+                </div>
+                <div class="mb-4">
+                    <label for="label4" class="ds-input-label">Disable Text Input</label>
+                    <input class="ds-text-input" id="label4" placeholder="Write something" disabled="disabled" />
+                </div>
+                <h2 class="text-secondary mt-4">Dropdowns:</h2>
+                <hr />
+                <div class="mb-3">
+                    <label class="ds-dropdown-label">Optional Dropdown</label>
+                    <div class="ds-select">
+                        <select>
+                            <option value="0">Choose an item…</option>
+                            <option value="1">Option 1</option>
+                            <option value="2">Option 2</option>
+                            <option value="3">Option 3</option>
+                            <option value="4">Option 4</option>
+                            <option value="5">Option 5</option>
+                            <option value="6">Option 6</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label class="ds-dropdown-label">Error Dropdown *</label>
+                    <div class="ds-select is-invalid">
+                        <select>
+                            <option value="0">Choose an item…</option>
+                            <option value="1">Option 1</option>
+                            <option value="2">Option 2</option>
+                            <option value="3">Option 3</option>
+                            <option value="4">Option 4</option>
+                            <option value="5">Option 5</option>
+                            <option value="6">Option 6</option>
+                        </select>
+                    </div>
+                    <span class="ds-error-message">! Error message</span>
+                </div>
+                <div class="mb-3">
+                    <label class="ds-dropdown-label">Mandatory Dropdown with Hint *</label>
+                    <div class="ds-select">
+                        <select>
+                            <option value="0">Choose an item…</option>
+                            <option value="1">Option 1</option>
+                            <option value="2">Option 2</option>
+                            <option value="3">Option 3</option>
+                            <option value="4">Option 4</option>
+                            <option value="5">Option 5</option>
+                            <option value="6">Option 6</option>
+                        </select>
+                    </div>
+                    <span class="ds-hint-message">Hint</span>
+                </div>
+                <div class="mb-3">
+                    <label class="ds-dropdown-label">disabled Dropdown</label>
+                    <div class="ds-select disabled">
+                        <select>
+                            <option value="0">Choose an item…</option>
+                            <option value="1">Option 1</option>
+                            <option value="2">Option 2</option>
+                            <option value="3">Option 3</option>
+                            <option value="4">Option 4</option>
+                            <option value="5">Option 5</option>
+                            <option value="6">Option 6</option>
+                        </select>
+                    </div>
+                </div>
+                <h2 class="text-secondary mt-4">IN-Page Side Navigation:</h2>
+                <hr />
+                <div id="navbar-example" class="accordion ds-inpage-sideNavigation col-md-3">
+                    <div id="navbar-headingOne">
+                        <button type="button" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="true" aria-controls="navbar-collapse">
+                            <h3 id="Selected-nav-lable">Section 1 Heading</h3>
+                            <i class="ds-chevron-down"></i>
+                        </button>
+                    </div>
+                    <div id="navbar-collapse" class="collapse show" aria-labelledby="navbar-headingOne">
+                        <ul>
+                            <li class="nav-item active">
+                                <a href="#" class="nav-link">section1</a>
+                            </li>
+                            <li class="nav-item"><a href="#" class="nav-link">section2</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">section3</a></li>
+                            <div>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">section4</a>
+                                </li>
+                                <ol>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link">sub section 1</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link">sub section 2</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link">sub section 3</a>
+                                    </li>
+                                </ol>
+                                <div />
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">section5</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">section6</a>
+                                </li>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+                <h2 class="text-secondary mt-4">List:</h2>
+                <hr />
+                <div class="ds-lists">
+                    <ol>
+                        <li>
+                            Lorem ipsum dolor sit amet, consectetur
+                            <ol type="A">
+                                <li>Lorem ipsum dolor sit amet, consectetur</li>
+                                <li>Lorem ipsum dolor sit amet, consectetur</li>
+                                <li>Lorem ipsum dolor sit amet, consectetur</li>
+                            </ol>
+                        </li>
+                        <li>Lorem ipsum dolor sit amet, consectetur</li>
+                        <li>Lorem ipsum dolor sit amet, consectetur</li>
+                        <li>Lorem ipsum dolor sit amet, consectetur</li>
+                    </ol>
+                </div>
+                <h2 class="text-secondary mt-4">Search:</h2>
+                <hr />
+                <div class="ds-search-container">
+                    <div class="ds-search-input">
+                        <i class="ds-search"></i> <input />
+                        <button type="button" class="btn clear-btn d-none">
+                            <i class="ds-x"></i>
+                        </button>
+                        <button type="button" class="btn btn-primary">Search</button>
+                    </div>
+                    <div class="ds-search-result d-none">
+                        <div class="box" tabindex="0">
+                            <i class="ds-search"></i> <span><b>House</b></span>
+                            <button class="ds-tag--green">Life Experience</button>
+                        </div>
+                        <div class="box" tabindex="0">
+                            <i class="ds-search"></i> <span><b>House</b></span>
+                            <button class="ds-tag--violet">Journey</button>
+                        </div>
+                        <div class="box" tabindex="0">
+                            <span><b>Hous</b>ing</span>
+                        </div>
+                        <div class="box" tabindex="0">
+                            <span><b>Hous</b>ing & Properties</span>
+                        </div>
+                        <div class="box" tabindex="0">
+                            <span>Apply for <b>Hous</b>ing support</span>
+                        </div>
+                        <div class="box" tabindex="0">
+                            <span>Adding <b>Hous</b>ehold members to the national address</span>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <h2 class="text-secondary mt-4">Slider:</h2>
+            <hr />
+            <div id="carouselExampl" class="carousel slide ds-slider" data-interval="false">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampl" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampl" data-slide-to="1"></li>
+                    <li data-target="#carouselExampl" data-slide-to="2"></li>
+                    <li data-target="#carouselExampl" data-slide-to="3"></li>
+                    <li data-target="#carouselExampl" data-slide-to="4"></li>
+                    <li data-target="#carouselExampl" data-slide-to="5"></li>
+                    <li data-target="#carouselExampl" data-slide-to="6"></li>
+                    <li data-target="#carouselExampl" data-slide-to="7"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="ds-service-card" tabindex="0">
+                            <h3>1</h3>
+                            <p>
+                                Here you can include a description in four lines. Here you can include a description in four lines. Here you can include a description.
+                            </p>
+                            <div class="ds-card-footer">
+                                <button class="ds-tag--green">Tag 1</button>
+                                <button class="ds-tag--violet">Tag 2</button>
+                                <button class="ds-tag--gray">Tag 3</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="ds-service-card" tabindex="0">
+                            <h3>2</h3>
+                            <p>
+                                Here you can include a description in four lines. Here you can include a description in four lines. Here you can include a description.
+                            </p>
+                            <div class="ds-card-footer">
+                                <button class="ds-tag--green">Tag 1</button>
+                                <button class="ds-tag--violet">Tag 2</button>
+                                <button class="ds-tag--gray">Tag 3</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="ds-service-card" tabindex="0">
+                            <h3>3</h3>
+                            <p>
+                                Here you can include a description in four lines. Here you can include a description in four lines. Here you can include a description.
+                            </p>
+                            <div class="ds-card-footer">
+                                <button class="ds-tag--green">Tag 1</button>
+                                <button class="ds-tag--violet">Tag 2</button>
+                                <button class="ds-tag--gray">Tag 3</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="ds-service-card" tabindex="0">
+                            <h3>4</h3>
+                            <p>
+                                Here you can include a description in four lines. Here you can include a description in four lines. Here you can include a description.
+                            </p>
+                            <div class="ds-card-footer">
+                                <button class="ds-tag--green">Tag 1</button>
+                                <button class="ds-tag--violet">Tag 2</button>
+                                <button class="ds-tag--gray">Tag 3</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="ds-service-card" tabindex="0">
+                            <h3>5</h3>
+                            <p>
+                                Here you can include a description in four lines. Here you can include a description in four lines. Here you can include a description.
+                            </p>
+                            <div class="ds-card-footer">
+                                <button class="ds-tag--green">Tag 1</button>
+                                <button class="ds-tag--violet">Tag 2</button>
+                                <button class="ds-tag--gray">Tag 3</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="ds-service-card" tabindex="0">
+                            <h3>6</h3>
+                            <p>
+                                Here you can include a description in four lines. Here you can include a description in four lines. Here you can include a description.
+                            </p>
+                            <div class="ds-card-footer">
+                                <button class="ds-tag--green">Tag 1</button>
+                                <button class="ds-tag--violet">Tag 2</button>
+                                <button class="ds-tag--gray">Tag 3</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="ds-service-card" tabindex="0">
+                            <h3>7</h3>
+                            <p>
+                                Here you can include a description in four lines. Here you can include a description in four lines. Here you can include a description.
+                            </p>
+                            <div class="ds-card-footer">
+                                <button class="ds-tag--green">Tag 1</button>
+                                <button class="ds-tag--violet">Tag 2</button>
+                                <button class="ds-tag--gray">Tag 3</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="ds-service-card" tabindex="0">
+                            <h3>8</h3>
+                            <p>
+                                Here you can include a description in four lines. Here you can include a description in four lines. Here you can include a description.
+                            </p>
+                            <div class="ds-card-footer">
+                                <button class="ds-tag--green">Tag 1</button>
+                                <button class="ds-tag--violet">Tag 2</button>
+                                <button class="ds-tag--gray">Tag 3</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampl" role="button" data-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span> <span class="sr-only">Previous</span> </a>
+                <a class="carousel-control-next" href="#carouselExampl" role="button" data-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span> <span class="sr-only">Next</span></a>
+            </div>
+            <footer class="ds-footer">
+                <div class="ds-last-modified">
+                    Last Modified Date: 04/12/2020 - 4:13 PM Saudi Arabia Time
+                </div>
+                <div class="ds-feedback">
+                    <div class="ds-feedback-header">
+                        <div class="question">Is this page helpful to you?</div>
+                        <div class="anser">
+                            <button type="button" class="btn btn-secondary btn-yes">Yes</button>
+                            <button type="button" class="btn btn-secondary btn-no">No</button>
+                        </div>
+                        <div class="wrong-link">
+                            <a href="#" class="ds-link">There is something wrong with this page</a>
+                        </div>
+                        <div class="feedbacks"><span>60%</span>&nbsp;of users said &nbsp;<span>Yes</span>&nbsp;from 2843 Feedbacks</div>
+                    </div>
+                    <div class="ds-feedback-body">
+                        <button class="close-btn">Close <i class="ds-x-circle"></i></button>
+                        <p class="h7">Help us improve GOV.SA</p>
+                        <p>
+                            Please don’t include personal or financial information like your National Insurance number or credit card details.
+                        </p>
+                        <div class="mt-5">
+                            <div class="mb-3"><strong>Please tell us why </strong><span>(select up to two options)</span></div>
+                            <div class="feedback-yes">
+                                <div class="mb-3">
+                                    <input type="checkbox" class="ds-checkbox-input" name="feedback" id="feedback" />
+                                    <label for="feedback" class="ds-checkbox-label"><span class="ds-checkbox-button" for="feedback"></span> It was helpful</label>
+                                </div>
+                                <div class="mb-3">
+                                    <input type="checkbox" class="ds-checkbox-input" name="feedback" id="feedback1" />
+                                    <label for="feedback1" class="ds-checkbox-label"><span class="ds-checkbox-button" for="feedback1"></span> The answers were relevant</label>
+                                </div>
+                                <div class="mb-3">
+                                    <input type="checkbox" class="ds-checkbox-input" name="feedback" id="feedback2" />
+                                    <label for="feedback2" class="ds-checkbox-label"><span class="ds-checkbox-button" for="feedback2"></span> It was well written</label>
+                                </div>
+                                <div class="mb-3">
+                                    <input type="checkbox" class="ds-checkbox-input" name="feedback" id="feedback3" />
+                                    <label for="feedback3" class="ds-checkbox-label"><span class="ds-checkbox-button" for="feedback3"></span> The layout made it easy to read</label>
+                                </div>
+                            </div>
+                            <div class="feedback-no">
+                                <div class="mb-3">
+                                    <input type="checkbox" class="ds-checkbox-input" name="feedback-no" id="feedback-no" />
+                                    <label for="feedback-no" class="ds-checkbox-label"><span class="ds-checkbox-button" for="feedback-no"></span> It was poorly written</label>
+                                </div>
+                                <div class="mb-3">
+                                    <input type="checkbox" class="ds-checkbox-input" name="feedback-no" id="feedback-no1" />
+                                    <label for="feedback-no1" class="ds-checkbox-label"><span class="ds-checkbox-button" for="feedback-no1"></span> I could not find a relevant answer</label>
+                                </div>
+                                <div class="mb-3">
+                                    <input type="checkbox" class="ds-checkbox-input" name="feedback-no" id="feedback-no2" />
+                                    <label for="feedback-no2" class="ds-checkbox-label"><span class="ds-checkbox-button" for="feedback-no2"></span> There was a technical problem</label>
+                                </div>
+                                <div class="mb-3">
+                                    <input type="checkbox" class="ds-checkbox-input" name="feedback-no" id="feedback-no3" />
+                                    <label for="feedback-no3" class="ds-checkbox-label"><span class="ds-checkbox-button" for="feedback-no3"></span> The layout made it difficult to read</label>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <input type="checkbox" class="ds-checkbox-input" name="feedback-no" id="feedback-some" />
+                                <label for="feedback-some" class="ds-checkbox-label"><span class="ds-checkbox-button" for="feedback-some"></span> Something else</label>
+                            </div>
+                            <textarea class="ds-text-input feedback-input d-none" placeholder="Write something" rows="2"></textarea>
+                            <div class="mt-4">
+                                <button type="button" class="btn btn-primary">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ds-footer-container">
+                    <div class="ds-footer-body container">
+                        <div class="ds-footer-section">
+                            <button>About the Portal <i class="ds-chevron-down"></i></button>
+                            <div class="ds-footer-section-body">
+                                <a href="">Contact us</a> <a href="">Accessibility</a>
+                                <a href="">User Chart</a>
+                                <a href="">Government Portals Visitors Statistics</a>
+                                <a href="">Polls</a> <a href="">Help</a>
+                                <a href="">National Contact Center (Amer)</a>
+                            </div>
+                        </div>
+                        <div class="ds-footer-section">
+                            <button>Quick links <i class="ds-chevron-down"></i></button>
+                            <div class="ds-footer-section-body">
+                                <a href="">GCC eGovernment Portals</a>
+                                <a href="">Government Procurement</a>
+                                <a href="">Employment in the Kingdom</a>
+                                <a href="">Sustainable Development</a>
+                                <a href="">Governement Open Data</a> <a href="">Services Index</a>
+                            </div>
+                        </div>
+                        <div class="ds-footer-section">
+                            <button>About GOV.SA <i class="ds-chevron-down"></i></button>
+                            <div class="ds-footer-section-body">
+                                <a href="">News</a> <a href="">Events</a> <a href="">Social Media</a> <a href="">eParticipation</a>
+                                <a href="">Service Level Agreement</a>
+                            </div>
+                        </div>
+                        <div class="ds-footer-section">
+                            <span class="contact-us-title">Contact us</span>
+                            <div class="contact-us">
+                                <img src="assets/img/combined-shape.svg" alt="" />
+                                <a href="tel:199099" class="number">199099</a>
+                            </div>
+                            <span class="social-media-title pb-0">Social media</span>
+                            <div class="social-media">
+                                <a href="#"><i class="ds-facebook-2"></i></a>
+                                <a href="#"><i class="ds-linkedin-2"></i></a>
+                                <a href="#"><i class="ds-twitter-2"></i></a>
+                                <a href="#"><i class="ds-youtube-2"></i></a>
+                            </div>
+                            <span class="accessibility-tools-title">Accessibility tools</span>
+                            <div class="accessibility-tools">
+                                <a href="#"><i class="ds-vision"></i></a>
+                                <a href="#"><i class="ds-volume-3"></i></a>
+                                <a href="#"><i class="ds-zoom_in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ds-footer-policy">
+                        <div><a href="">Privacy Policy</a> <a href="">Terms of Use</a> <a href="">Sitemap</a> <a href="">RSS</a></div>
+                        <div>
+                            <span>Developed and Maintained by YESSER E-Government Program</span>
+                        </div>
+                        <div><span>© GOV.SA All Rights Reserved 2020</span></div>
+                    </div>
+                </div>
+            </footer>
+            <script src="assets/js/nds-ds.js"></script>
+            <script src="assets/js/highlight.min.js"></script>
+            <script src="assets/js/main-js"></script>
+        </body>
+    </head>
+</html>

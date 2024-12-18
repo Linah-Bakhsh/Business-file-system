@@ -1,0 +1,216 @@
+
+.counter{
+    background: #F3F7F5;
+border-radius: 43px;
+text-align: center;
+color: #1E6144;
+align-self: center;
+}
+
+
+
+
+.agency-header .ds-text-input {
+
+    font-size: 16px;
+
+}
+
+
+@media (max-width: 600px) {
+    .agency-header .ds-text-input {
+        width: auto;
+        font-size: 16px;
+
+    }
+
+}
+
+.ico-btn:hover{
+    color: #3CA078 !important;
+    cursor: pointer;
+}
+.card-custom {
+    max-width: 100%;
+    margin: 2rem auto;
+    border-radius: 15px;
+    /* Curved corners for the card */
+    overflow: hidden;
+    /* Ensures the border-radius is applied to children */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Shadow for the card */
+    background-color: #fff;
+    /* White background for the card */
+}
+
+.card-body-custom {
+    padding: 2rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    font-size: 16px;
+   
+}
+
+thead>tr>th{
+    font-weight: 600;
+color: #11141E;
+}
+
+thead {
+
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+    /* Shadow for the thead */
+    border-radius: 10px !important;
+    font-size: 14px;
+   
+}
+
+thead th {
+    padding: 1.1rem;
+    text-align: start;
+    font-weight: normal;
+    /* No bold font */
+    position: relative;
+    /* Position relative to allow absolute positioning of pseudo-element */
+}
+
+/* Pseudo-element to create space */
+thead th::after {
+    content: '';
+    display: block;
+
+    height: 0;
+    width: 100%;
+}
+
+
+tbody tr td {
+
+    padding: 1.3rem;
+    text-align: start;
+
+}
+
+
+tbody tr {
+
+
+    border: 1px solid #e6e6e6;
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 0 14px;
+    text-align: start !important;
+}
+
+
+tbody tr td:last-child {
+    border-left: 1px solid #e6e6e6 !important;
+
+}
+
+table td {
+    text-align: start !important;
+
+    border-top: 1px solid #e6e6e6;
+    border-bottom: 1px solid #e6e6e6;
+    border-bottom: 1px solid #e6e6e6;
+
+
+    width: 160px;
+    height: 30px;
+}
+tbody>tr:hover {
+background-color: #F7F7F7;
+}
+
+tr:hover td {
+background-color: transparent; /* or #000 */
+}
+
+table td:first-of-type {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+table td:last-of-type {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+ 
+
+
+.b-gray{
+    border-right: 10px solid  #707070;
+    /* Red right border on the first cell */
+
+}
+.b-blue{
+    border-right: 10px solid  #2967ae;
+    /* Red right border on the first cell */
+
+}
+
+.b-green{
+    border-right: 10px solid  #29ae5f;
+    /* Red right border on the first cell */
+}
+
+.b-red{
+    border-right: 10px solid #D04444;
+    /* Red right border on the first cell */
+
+}
+
+.b-yellow{
+    border-right: 10px solid  #eac66c;
+
+}
+
+
+.b-violet{
+    border-right: 10px solid  #5505cd;
+
+}
+
+.b-brown{
+    border-right: 10px solid  #816219;
+
+}
+
+
+.badge,
+.btn-sm {
+    font-size: 0.9em;
+}
+
+.btn-sm {
+    border-radius: 15px;
+    /* Rounded corners for buttons */
+    padding: 0.25rem 0.5rem;
+    /* Smaller padding for a compact button */
+}
+
+
+
+@media only screen and (max-width: 600px) {
+   
+.ico-btn{
+   
+    font-size: 20px !important;
+}
+
+}
+
+
+@media (min-width: 768px){}
+.d-md-block {
+    display: table-cell  ;
+}
+

@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="shortcut icon" type="image/png" href="../assets/img/favicon.ico" />
+  <title>معاملاتي</title>
+  <link href="../assets/css/nds-ds.css" rel="stylesheet" />
+  <link href="../assets/css/style.css" rel="stylesheet" />
+  <link href="../assets/css/e-participation.css" rel="stylesheet" />
+  <link href="../assets/css/animate.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../assets/css/bootstrap-icons.css" />
+  <link rel="stylesheet" href="../assets/css/aos.css" />
+</head>
+
+<body>
+  <!-- Start  navigation bar -->
+  <nav class="navbar navbar-expand-lg ds-header sticky bg-white">
+    <div class="container">
+      <div class="d-flex">
+        <!-- Button for toggling the navigation menu -->
+        <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse"
+          data-target="#navb">
+          <i class="ds-menu"></i>
+          <!-- Menu icon -->
+          <div class="md-hide text-primary">
+            <i class="ds-x-circle"></i> اغلاق
+            <!-- Close icon for small screens -->
+          </div>
+        </button>
+        <a class="navbar-brand" href="#">
+          <img src="../assets/img/ds-white-logo.svg" alt="logo" class="green-nav-logo" />
+          <!-- Green logo -->
+          <img src="../assets/img/logo.svg" class="light-nav-logo" alt="logo" />
+          <!-- Light logo -->
+        </a>
+      </div>
+
+      <div class="d-flex flex-row order-3" id="right-nav">
+        <ul class="navbar-nav flex-row">
+          <!-- List language for navigation -->
+          <li class="nav-item mobile-hide">
+            <a class="font-weight-bold nav-link" href="javascript:void(0)">English</a>
+          </li>
+
+          <!-- user botton-->
+          <li class="nav-item nav-item-login">
+            <a class="nav-link with-icon main-nav text-nav with-icon">
+              <!-- User icon (green) -->
+              <i class="bi bi-person-fill text-green"></i>
+              <!-- User icon (white) -->
+              <p class="mobile-hide">رامي ابو لبن</p>
+            </a>
+            <!-- user menu-->
+            <div id="login-dropdown-menu" class="dropdown-menu dropdown-menu-login p-3">
+              <ul class="list-group list-group-flush">
+                <a href="../profiles/individual_profile.html" class="main-nav list-group-item list-group-item-action">
+                  <i class="bi bi-person-circle"></i>
+                  ملفي الشخصي
+                </a>
+                <a href="../login_type.html"
+                  class="main-nav list-group-item list-group-item-action logout">
+                  <i class="bi bi-box-arrow-left"></i>
+                  تسجيل الخروج
+                </a>
+              </ul>
+            </div>
+            <!--End user menu-->
+          </li>
+          <!--End user botton-->
+
+          <!-- notification botton-->
+          <li class="nav-item nav-item-notifi">
+            <a class="nav-link with-icon">
+              <i class="bi bi-bell-fill text-green"></i>
+              <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger text-white">
+                9+ </span>
+
+              <p class="mobile-hide">الإشعارات</p>
+            </a>
+            <!-- notification menu-->
+            <div id="notifi-dropdown-menu" class="dropdown-menu dropdown-menu-notifi p-3">
+              <div class="list-group list-group-flush">
+                <a href="#" class="list-group-item list-group-item-action" aria-current="true">
+                  <div class="d-flex flex-row">
+                    <img class="p-2" src="../assets/img/proggres.svg" alt="" />
+                    <div class="p-2" style="text-align: right;">
+                      <div class="d-flex w-100 justify-content-between">
+                        <p class="mb-1">
+                          <b> تم سداد المخالفة رقم </b>
+                          <span class="text-primary"> #2254352</span>
+                        </p>
+                      </div>
+                      <small class="font-body-5"> منذ ساعه </small>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <!-- End notification menu-->
+          </li>
+          <!-- End notification botton-->
+        </ul>
+      </div>
+
+      <!--  navigation menu-->
+
+      <div class="collapse navbar-collapse order-2" id="navb">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link dropdown-toggle" href="../dashboard pages/dashboard.html" id="navbarDropdown4">
+              الرئيسية
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link dropdown-toggle  active" href="../transaction pages/transaction.html"
+              id="navbarDropdown4">
+              معاملاتي
+            </a>
+          </li>
+          <li class="nav-item"><a class="nav-link dropdown-toggle" href="../services/services.html"
+              id="navbarDropdown4"> خدماتي </a></li>
+        </ul>
+      </div>
+
+      <!--  End navigation menu-->
+    </div>
+  </nav>
+  <!-- End navigation bar -->
+  <!--  breadcrumb  -->
+  <nav class="ds-nav" style="margin-top: 80px;">
+    <div class="container">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+          <a href="../dashboard pages/dashboard.html">الصفحة الرئيسية</a>
+        </li>
+        <li class="breadcrumb-item">
+          <a href="/"> معاملاتي</a>
+        </li>
+      </ol>
+    </div>
+  </nav>
+  <!--End  breadcrumb  -->
+
+  <!--
+
+    <section class="container agencies-directory">
+        <div class="row agency-title-section">
+            <div class="col-md-12 col-sm-12 d-none d-md-block">
+                <h1 class="agency-title">  معاملاتي </h1>
+                <p class="agency-desc mb-0">هنا يمكنك إضافة وصف موجز حول الغرض من البوابة متبوعًا بزر دعوة للعمل وصورة أو رسم توضيحي على الجانب الأيسر هنا يمكنك إضافة وصف موجز حول الغرض من البوابة متبوعًا بزر دعوة للعمل وصورة أو رسم توضيحي على الجانب الأيسر</p>
+            </div> 
+            
+            <div class="col-9 d-block d-md-none">
+                <h2 class="agency-title">الاستشارات</h2>
+                <p class="agency-desc mb-0">هنا يمكنك إضافة وصف موجز حول الغرض من البوابة متبوعًا بزر دعوة للعمل وصورة أو رسم توضيحي على الجانب الأيسر هنا يمكنك إضافة وصف موجز حول الغرض من البوابة متبوعًا بزر دعوة للعمل وصورة أو رسم توضيحي على الجانب الأيسر</p>
+            </div>
+            <div class="col-3 d-block d-md-none">
+                <div class="ds-sort d-lg-block agency-header-sort-btn-container">
+                    <button type="button" class="btn ds-filtersbtn-header d-block d-lg-none mb-3"><i class="ds-sliders"></i></button>
+                </div>
+            </div>
+        </div>
+    </section> 
+    -->
+
+  <main class="container-fluid mb-5 px-md-5 px-4">
+    <div id="agencies-app-root">
+      <section class="container agencies-directory pt-5">
+        <div class="row agency-header">
+          <div class="col-3 d-none d-lg-block">
+            <h1 class="agency-header-filter">معاملاتي</h1>
+          </div>
+          <div class="col-12 px-0 d-block d-md-none">
+            <div class="d-flex col-12 agency-search-filter">
+              <label for="input2"></label>
+              <fieldset class="d-block mr-2 agency-search-input">
+                <i class="ds-search"></i>
+                <input id="input2" placeholder="البحث..." type="text" class="ds-text-input" value="" />
+              </fieldset>
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-9 d-none d-md-block">
+            <div class="d-flex float-right agency-search-filter">
+              <label for="input1"></label>
+              <fieldset class="d-block mr-2 agency-search-input">
+                <i class="ds-search"></i>
+                <input id="input1" placeholder="البحث..." type="text" class="ds-text-input" value="" />
+              </fieldset>
+
+              <div class="ds-sort d-none d-lg-block agency-header-sort-btn-container">
+                <div class="ds-filters">
+                  <button type="button" class="btn ds-filters-header">
+                    <i class="ds-sort-1"></i>
+                    <!--filter-->
+                    <span style="font-weight: normal;">
+                      الترتيب بحسب : &nbsp;
+                      <b id="text-search-sort">
+                        الشائع
+                      </b>
+                    </span>
+                  </button>
+
+                  <!--filter content-->
+                  <div class="ds-filters-body d-none">
+                    <div class="p-3 ds-filters-card">
+                      <p class="font-weight-bold my-2 px-2">الترتيب بحسب :</p>
+                      <div class="ds-sort-mobile"></div>
+                      <div class="ds-sort-card bg-secondary">
+                        <button type="button" class="ds-sort-card-header text-green font-weight-bold">الشائع <i
+                            class="ds-check"></i></button>
+                      </div>
+
+                      <div class="ds-sort-card">
+                        <button type="button" class="ds-sort-card-header border-0">
+                          الأهمية
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <!--End content-->
+                </div>
+              </div>
+            </div>
+            <p class="d-none d-lg-block agency-header-results" style="padding-left: 100px;">
+              عرض 1-6 من أصل 6 نتيجة
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <div class="agencies-list">
+              <div class="agencies-list-results">
+                <div id="cards-container" data-cards-count="6" class="row no-gutters pl-1">
+                  <!-- Start: Container for Service Cards -->
+                  <a href="license.html" id="card" class="col-lg-3 col-md-6 agency-card pl-2 mt-2">
+                    <!-- Start: Individual Service Card -->
+                    <div class="ds-service-card ds-service-card-list" style="height: 300px;" data-aos="fade-up">
+                      <!-- icon -->
+                      <i class="bi bi-award icon"></i>
+
+                      <!-- Title of the service -->
+                      <h3 class="text-green mb-2">رخصي</h3>
+
+                      <!-- Description of the service -->
+                      <p class="font-body-3">
+                        خدمة تمكن المستخدم من الاطلاع على قائمة الرخص المتعلقة بحسابه
+                      </p>
+
+                      <div class="ds-card-footer">
+                        <!-- Service category information -->
+                        <div style="margin-top: 10px; font-size: 10px; line-height: 1.8; letter-spacing: 1px;">
+                          <p class="font-body-3 m-0">التصنيف</p>
+
+                          <br />
+
+                          <!-- category tag for the service   -->
+                          <span class="ds-tag--yellow"> أفراد </span>
+                          <span class="ds-tag--blue mx-3"> أعمال </span>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End: Individual Service Card -->
+                  </a>
+
+                  <!-- Start: Container for Service Cards -->
+                  <a href="projects.html" id="card" class="col-lg-3 col-md-6 agency-card pl-2 mt-2">
+                    <!-- Start: Individual Service Card -->
+                    <div class="ds-service-card ds-service-card-list" style="height: 300px;" data-aos="fade-up">
+                      <!-- icon -->
+                      <i class="bi bi-kanban icon"></i>
+
+                      <!-- Title of the service -->
+                      <h3 class="text-green mb-2">مشاريعي</h3>
+
+                      <!-- Description of the service -->
+                      <p class="font-body-3">
+                        خدمة تمكن المستخدم من الاطلاع على قائمة المستخلصات
+                      </p>
+
+                      <div class="ds-card-footer">
+                        <!-- Service category information -->
+                        <div style="margin-top: 10px; font-size: 10px; line-height: 1.8; letter-spacing: 1px;">
+                          <p class="font-body-3 m-0">التصنيف</p>
+
+                          <br />
+
+                          <!-- category tag for the service   -->
+                          <span class="ds-tag--blue"> أعمال </span>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End: Individual Service Card -->
+                  </a>
+
+                  <!-- Start: Container for Service Cards -->
+                  <a href="extracts.html" id="card" class="col-lg-3 col-md-6 agency-card pl-2 mt-2">
+                    <!-- Start: Individual Service Card -->
+                    <div class="ds-service-card ds-service-card-list" style="height: 300px;" data-aos="fade-up">
+                      <!-- icon -->
+                      <i class="bi-journal-bookmark-fill icon"></i>
+
+                      <!-- Title of the service -->
+                      <h3 class="text-green mb-2">مستخلصاتي</h3>
+
+                      <!-- Description of the service -->
+                      <p class="font-body-3">
+                        خدمة تمكن المستخدم من الاطلاع على قائمة المشاريع المتعلقة بحسابه
+                      </p>
+
+                      <div class="ds-card-footer">
+                        <!-- Service category information -->
+                        <div style="margin-top: 10px; font-size: 10px; line-height: 1.8; letter-spacing: 1px;">
+                          <p class="font-body-3 m-0">التصنيف</p>
+
+                          <br />
+
+                          <!-- category tag for the service   -->
+                          <span class="ds-tag--blue"> أعمال </span>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End: Individual Service Card -->
+                  </a>
+
+                  <!-- Start: Container for Service Cards -->
+                  <a href="bills.html" id="card" class="col-lg-3 col-md-6 agency-card pl-2 mt-2">
+                    <!-- Start: Individual Service Card -->
+                    <div class="ds-service-card ds-service-card-list" style="height: 300px;" data-aos="fade-up">
+                      <!-- icon -->
+                      <i class="bi bi-receipt-cutoff icon"></i>
+
+                      <!-- Title of the service -->
+                      <h3 class="text-green mb-2">فواتيري</h3>
+
+                      <!-- Description of the service -->
+                      <p class="font-body-3">
+                        خدمة تمكن المستخدم من استعراض الفواتير المتعلقة بحسابه مع إمكانية سدادها
+                      </p>
+
+                      <div class="ds-card-footer">
+                        <!-- Service category information -->
+                        <div style="margin-top: 10px; font-size: 10px; line-height: 1.8; letter-spacing: 1px;">
+                          <p class="font-body-3 m-0">التصنيف</p>
+
+                          <br />
+
+                          <!-- category tag for the service   -->
+                          <span class="ds-tag--yellow"> أفراد </span>
+                          <span class="ds-tag--blue mx-3"> أعمال </span>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End: Individual Service Card -->
+                  </a>
+
+                  <!-- Start: Container for Service Cards -->
+                  <a href="violations.html" id="card" class="col-lg-3 col-md-6 agency-card pl-2 mt-2">
+                    <!-- Start: Individual Service Card -->
+                    <div class="ds-service-card ds-service-card-list" style="height: 300px;" data-aos="fade-up">
+                      <!-- icon -->
+                      <i class="bi bi-exclamation-triangle icon"></i>
+
+                      <!-- Title of the service -->
+                      <h3 class="text-green mb-2">مخالفاتي</h3>
+
+                      <!-- Description of the service -->
+                      <p class="font-body-3">
+                        خدمة تمكن المستخدم من الاطلاع ومتابعة المخالفات على جميع الرخص المتعلقة بحسابه مع إمكانية سدادها
+                      </p>
+
+                      <div class="ds-card-footer">
+                        <!-- Service category information -->
+                        <div style="margin-top: 10px; font-size: 10px; line-height: 1.8; letter-spacing: 1px;">
+                          <p class="font-body-3 m-0">التصنيف</p>
+
+                          <br />
+
+                          <!-- category tag for the service   -->
+                          <span class="ds-tag--yellow"> أفراد </span>
+                          <span class="ds-tag--blue mx-3"> أعمال </span>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End: Individual Service Card -->
+                  </a>
+
+                  <!-- Start: Container for Service Cards -->
+                  <a href="legal-file.html" id="card" class="col-lg-3 col-md-6 agency-card pl-2 mt-2">
+                    <!-- Start: Individual Service Card -->
+                    <div class="ds-service-card ds-service-card-list" style="height: 300px;" data-aos="fade-up">
+                      <!-- icon -->
+                      <i class="bi bi-folder2-open icon"></i>
+
+                      <!-- Title of the service -->
+                      <h3 class="text-green mb-2">ملفي القانوني</h3>
+
+                      <!-- Description of the service -->
+                      <p class="font-body-3">
+                        خدمة تمكن المستخدم من الاطلاع على قائمة القضايا المتعلقة بحسابه
+                      </p>
+
+                      <div class="ds-card-footer">
+                        <!-- Service category information -->
+                        <div style="margin-top: 10px; font-size: 10px; line-height: 1.8; letter-spacing: 1px;">
+                          <p class="font-body-3 m-0">التصنيف</p>
+
+                          <br />
+
+                          <!-- category tag for the service   -->
+                          <span class="ds-tag--yellow"> أفراد </span>
+                          <span class="ds-tag--blue mx-3"> أعمال </span>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End: Individual Service Card -->
+                  </a>
+
+                  <!-- Start: Container for Service Cards -->
+                  <a href="objection.html" id="card" class="col-lg-3 col-md-6 agency-card pl-2 mt-2">
+                    <!-- Start: Individual Service Card -->
+                    <div class="ds-service-card ds-service-card-list" style="height: 300px;" data-aos="fade-up">
+                      <!-- icon -->
+                      <i class="bi bi-ban icon"></i>
+
+                      <!-- Title of the service -->
+                      <h3 class="text-green mb-2">اعتراضاتي</h3>
+
+                      <!-- Description of the service -->
+                      <p class="font-body-3">
+                        خدمة تمكن المستخدم من استعراض الاعتراضات المقدمة من خلاله ومتابعة حالتها
+                      </p>
+
+                      <div class="ds-card-footer">
+                        <!-- Service category information -->
+                        <div style="margin-top: 10px; font-size: 10px; line-height: 1.8; letter-spacing: 1px;">
+                          <p class="font-body-3 m-0">التصنيف</p>
+
+                          <br />
+
+                          <!-- category tag for the service   -->
+                          <span class="ds-tag--yellow"> أفراد </span>
+                          <span class="ds-tag--blue mx-3"> أعمال </span>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End: Individual Service Card -->
+                  </a>
+
+                  <!-- Start: Container for Service Cards -->
+                  <a href="able-to-objection.html" id="card" class="col-lg-3 col-md-6 agency-card pl-2 mt-2">
+                    <!-- Start: Individual Service Card -->
+                    <div class="ds-service-card ds-service-card-list" style="height: 300px;" data-aos="fade-up">
+                      <!-- icon -->
+                      <i class="bi bi-gear icon"></i>
+
+                      <!-- Title of the service -->
+                      <h3 class="text-green mb-2">معاملات قابلة للاعتراض</h3>
+
+                      <!-- Description of the service -->
+                      <p class="font-body-3">
+                        خدمة تمكن المستخدم من استعراض المعاملات القابلة للاعتراض مع إمكانية تقديم طلب اعتراض
+                      </p>
+
+                      <div class="ds-card-footer">
+                        <!-- Service category information -->
+                        <div style="margin-top: 10px; font-size: 10px; line-height: 1.8; letter-spacing: 1px;">
+                          <p class="font-body-3 m-0">التصنيف</p>
+
+                          <br />
+
+                          <!-- category tag for the service   -->
+                          <span class="ds-tag--yellow"> أفراد </span>
+                          <span class="ds-tag--blue mx-3"> أعمال </span>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End: Individual Service Card -->
+
+                    <!-- End: Container for Service Cards -->
+                  </a>
+
+                  <div class="ds-pagination ml-3" style="margin-top: 72px;">
+                    <div class="pagination-bar">
+                      <ul>
+                        <li class="previous">
+                          <a href="#"
+                            class="btn btn-secondary btn-icon btn-icon-left d-flex justify-content-between align-items-center"
+                            role="button" aria-disabled="false" aria-label="Previous page" rel="prev">
+                            <i class="ds-chevron-left"></i>
+                            <span>السابق</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" rel="prev" role="button" class="btn btn-secondary btn-text" tabindex="0"
+                            aria-label="Page 1">١ </a>
+                        </li>
+                        <li class="selected">
+                          <a href="#" rel="canonical" role="button" class="btn btn-secondary btn-text selected"
+                            tabindex="-1" aria-label="Page 2 is your current page" aria-current="page">٢ </a>
+                        </li>
+                        <li>
+                          <a href="#" rel="next" role="button" class="btn btn-secondary btn-text" tabindex="0"
+                            aria-label="Page 3">٣ </a>
+                        </li>
+                        <li class="d-none d-md-block">
+                          <a href="#" rel="next" role="button" class="btn btn-secondary btn-text forth-page"
+                            tabindex="0" aria-label="Page 4">٤ </a>
+                        </li>
+                        <li class="break d-none d-md-block">
+                          <a class="btn btn-secondary btn-text btn-break" role="button" tabindex="0">... </a>
+                        </li>
+                        <li class="d-none d-md-block">
+                          <a href="#" role="button" class="btn btn-secondary btn-text sixith-page" tabindex="0"
+                            aria-label="Page 6">١۰ </a>
+                        </li>
+                        <li class="next">
+                          <a href="#"
+                            class="btn btn-secondary btn-icon btn-icon-right d-flex justify-content-between align-items-center"
+                            tabindex="0" role="button" aria-disabled="false" aria-label="Next page" rel="next">
+                            <span>التالي</span>
+                            <i class="ds-chevron-right"></i>
+                          </a>
+                        </li>
+                      </ul>
+                      <ul class="total-pages-ul">
+                        <li>
+                          <p class="total-pages" style="margin-top: 10px; color: #757575;">
+                            مجموع الصفحات ٨٠
+                          </p>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="ds-footer">
+    <div class="ds-footer-container">
+      <div class="ds-footer-policy p-2 container">
+        <div class="p-2 bd-highlight m-0">
+          <!-- logo   -->
+          <img src="../assets/img/ds-white-logo.svg" style="width: 130px;" alt="" />
+
+          <img src="../assets/img/Saudi_Vision_2030_logo.svg.png" style="width: 60px;" class="logo-white px-2" alt="" />
+        </div>
+
+        <div class="p-2 bd-highlight my-0">
+          <a href="">شروط الإستخدام</a>
+        </div>
+        <div class="p-2 bd-highlight">
+          <span>تطوير و تشغيل - وكالة التحول الرقمي</span>
+        </div>
+        <!-- copyright -->
+        <div class="p-2 bd-highlight">
+          <span> امانة العاصمة المقدسة © 2023 </span>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Bootstrap core JS-->
+  <script src="../assets/js/aos.js"></script>
+  <script type="text/javascript" src=" ../assets/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/js/nds-ds.js"></script>
+  <script src="../assets/js/highlight.min.js"></script>
+  <script src="../assets/js/main-js"></script>
+
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>

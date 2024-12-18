@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link rel="shortcut icon" type="image/png" href="../assets/img/favicon.ico" />
+        <title>تفاصيل الخدمة</title>
+        <link href="../assets/css/nds-ds.css" rel="stylesheet" />
+        <link href="../assets/css/style.css" rel="stylesheet" />
+        <link href="../assets/css/animate.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="../assets/css/bootstrap-icons.css" />
+        <link href="../assets/css/e-participation.css" rel="stylesheet" />
+        <link href="../assets/css/service.css" rel="stylesheet" />
+
+        <link rel="stylesheet" href="../assets/css/aos.css" />
+    </head>
+
+    <body>
+        <!-- Start  navigation bar -->
+        <nav class="navbar navbar-expand-lg ds-header sticky bg-white">
+            <div class="container">
+                <div class="d-flex">
+                    <!-- Button for toggling the navigation menu -->
+                    <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse" data-target="#navb">
+                        <i class="ds-menu"></i>
+                        <!-- Menu icon -->
+                        <div class="md-hide text-primary">
+                            <i class="ds-x-circle"></i> اغلاق
+                            <!-- Close icon for small screens -->
+                        </div>
+                    </button>
+                    <a class="navbar-brand" href="#">
+                        <img src="../assets/img/ds-white-logo.svg" alt="logo" class="green-nav-logo" />
+                        <!-- Green logo -->
+                        <img src="../assets/img/logo.svg" class="light-nav-logo" alt="logo" />
+                        <!-- Light logo -->
+                    </a>
+                </div>
+
+                <div class="d-flex flex-row order-3" id="right-nav">
+                    <ul class="navbar-nav flex-row">
+                        <!-- List language for navigation -->
+                        <li class="nav-item mobile-hide">
+                            <a class="font-weight-bold nav-link" href="javascript:void(0)">English</a>
+                        </li>
+
+                        <!-- user botton-->
+                        <li class="nav-item nav-item-login">
+                            <a class="nav-link with-icon main-nav text-nav with-icon">
+                                <!-- User icon (green) -->
+                                <i class="bi bi-person-fill text-green"></i>
+                                <!-- User icon (white) -->
+                                <p class="mobile-hide">رامي ابو لبن</p>
+                            </a>
+                            <!-- user menu-->
+                            <div id="login-dropdown-menu" class="dropdown-menu dropdown-menu-login p-3">
+                                <ul class="list-group list-group-flush">
+                                    <a href="../profiles/individual_profile.html" class="main-nav list-group-item list-group-item-action">
+                                        <i class="bi bi-person-circle"></i>
+                                        ملفي الشخصي
+                                    </a>
+                                    <a href="../login_type.html" class="main-nav list-group-item list-group-item-action logout">
+                                        <i class="bi bi-box-arrow-left"></i>
+                                        تسجيل الخروج
+                                    </a>
+                                </ul>
+                            </div>
+                            <!--End user menu-->
+                        </li>
+                        <!--End user botton-->
+
+                        <!-- notification botton-->
+                        <li class="nav-item nav-item-notifi">
+                            <a class="nav-link with-icon">
+                                <i class="bi bi-bell-fill text-green"></i>
+                                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger text-white"> 9+ </span>
+
+                                <p class="mobile-hide">الإشعارات</p>
+                            </a>
+                            <!-- notification menu-->
+                            <div id="notifi-dropdown-menu" class="dropdown-menu dropdown-menu-notifi p-3">
+                                <div class="list-group list-group-flush">
+                                    <a href="#" class="list-group-item list-group-item-action" aria-current="true">
+                                        <div class="d-flex flex-row">
+                                            <img class="p-2" src="../assets/img/proggres.svg" alt="" />
+                                            <div class="p-2" style="text-align: right;">
+                                                <div class="d-flex w-100 justify-content-between">
+                                                    <p class="mb-1">
+                                                        <b> تم سداد المخالفة رقم </b>
+                                                        <span class="text-primary"> #2254352</span>
+                                                    </p>
+                                                </div>
+                                                <small class="font-body-5"> منذ ساعه </small>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- End notification menu-->
+                        </li>
+                        <!-- End notification botton-->
+                    </ul>
+                </div>
+
+                <!--  navigation menu-->
+
+                <div class="collapse navbar-collapse order-2" id="navb">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link dropdown-toggle" href="../dashboard pages/dashboard.html" id="navbarDropdown4">
+                                الرئيسية
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link dropdown-toggle" href="../transaction pages/transaction.html" id="navbarDropdown4">
+                                معاملاتي
+                            </a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link dropdown-toggle" href="../services/services.html" id="navbarDropdown4"> خدماتي </a></li>
+                    </ul>
+                </div>
+
+                <!--  End navigation menu-->
+            </div>
+        </nav>
+        <!-- End navigation bar -->
+        <!--  breadcrumb  -->
+        <nav class="ds-nav" style="margin-top: 80px;">
+            <div class="container">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item">
+                        <a href="../dashboard pages/dashboard.html">الصفحة الرئيسية</a>
+                    </li>
+                    <li class="breadcrumb-item">
+                        <a href="/"> خدماتي</a>
+                    </li>
+                    <li class="breadcrumb-item">
+                        <a href="/"> تفاصيل الخدمة</a>
+                    </li>
+                </ol>
+            </div>
+        </nav>
+        <!--End  breadcrumb  -->
+
+        <section class="service-details">
+            <div style="background-color: rgba(60, 160, 120, 0.05); padding-top: 80px;">
+                <div class="container pb-0 pb-lg-5 service-card-hero-section-container">
+                    <div class="row">
+                        <!-- Left Column -->
+                        <div class="col-lg-7">
+                            <!-- Start Service Button (Hidden on Medium and Smaller Screens) -->
+                            <div class="d-none d-md-block">
+                                <a class="btn btn-primary float-right mt-4">
+                                    ابدأ الخدمة
+                                </a>
+                            </div>
+                            <!-- Explorer Title -->
+                            <h2 class="mb-0">المستكشف الجغرافي</h2>
+
+                            <!-- Star Rating Section -->
+                            <div class="star-rating">
+                                <!-- No Ratings Message -->
+                                <span class="font-body-2 mobile-hide"> لايوجد اي تقييمات حتى الآن </span>
+
+                                <!-- Rating Button and Stars -->
+                                <span class="bg-gray1 p-1 px-4">
+                                    <button class="btn p-1 px-4 btn-rate">تقييم</button>
+
+                                    <!-- Star Ratings -->
+                                    <input type="radio" id="star5" name="rating" value="5" />
+                                    <label for="star5">
+                                        <i class="bi bi-star-fill font-body-2"></i>
+                                    </label>
+                                    <input type="radio" id="star4" name="rating" value="4" />
+                                    <label for="star4">
+                                        <i class="bi bi-star-fill font-body-2"></i>
+                                    </label>
+                                    <input type="radio" id="star3" name="rating" value="3" />
+                                    <label for="star3">
+                                        <i class="bi bi-star-fill font-body-2"></i>
+                                    </label>
+                                    <input type="radio" id="star2" name="rating" value="2" />
+                                    <label for="star2">
+                                        <i class="bi bi-star-fill font-body-2"></i>
+                                    </label>
+                                    <input type="radio" id="star1" name="rating" value="1" />
+                                    <label for="star1">
+                                        <i class="bi bi-star-fill font-body-2"></i>
+                                    </label>
+                                </span>
+                            </div>
+
+                            <!-- Explorer Tag -->
+                            <div style="margin-top: 24px; margin-bottom: 24px;">
+                                <button class="ds-tag--yellow mt-0">المستكشف الجغرافي</button>
+                            </div>
+
+                            <!-- Explorer Description -->
+                            <p>
+                                تطبيق جغرافي إرشاد الحجاج والزائرين والمواطنين لمنطقة مكة المكرمة والمشاعر المقدسة يطبق على الهواتف الذكية والأجهزة اللوحية
+                            </p>
+
+                            <!-- Start Service Button (Visible on Medium and Smaller Screens) -->
+                            <div class="col-md-12 mt-4 d-md-none d-block pl-0">
+                                <a href="#" class="btn btn-primary mt-4">
+                                    ابدأ الخدمة
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Right Column -->
+                        <div class="col-lg-4 offset-lg-1 mt-4 mt-lg-0 p-0 px-lg-3 d-none d-md-block">
+                            <!-- Service Information Card -->
+                            <div class="service-list-card">
+                                <!-- Business Details -->
+                                <div class="row mb-4 pb-2">
+                                    <div class="col-2 pr-4">
+                                        <i class="ds-user"></i>
+                                    </div>
+                                    <div class="col-9 p-0" style="font-weight: bold;">
+                                        الأعمال
+                                        <div>
+                                            <small style="color: #757575;">
+                                                الفئة المستهدفة
+                                            </small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Duration -->
+                                <div class="row mb-4 pb-2">
+                                    <div class="col-2 pr-4">
+                                        <i class="ds-clock"></i>
+                                    </div>
+                                    <div class="col-9 p-0" style="font-weight: bold;">
+                                        بوم واحد
+                                        <div>
+                                            <small style="color: #757575;">المدة الزمنية للمرحلة</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Service Channels -->
+                                <div class="row mb-4 pb-2">
+                                    <div class="col-2 pr-4">
+                                        <i class="ds-monitor"></i>
+                                    </div>
+                                    <div class="col-9 p-0" style="font-weight: bold;">
+                                        تطبيقات الويب والجوال
+                                        <div>
+                                            <small style="color: #757575;">قنوات تقديم الخدمة</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Cost -->
+                                <div class="row mb-4 pb-2">
+                                    <div class="col-2 pr-4">
+                                        <img src="../assets/img/price.svg" alt="logo" />
+                                    </div>
+                                    <div class="col-9 p-0" style="font-weight: bold;">
+                                        مجانا
+                                        <div>
+                                            <small style="color: #757575;">التكلفة</small>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Customer Service Contacts -->
+                                <div class="row pt-4 mt-2 mb-2 pb-4">
+                                    <p class="px-3 mb-0" style="font-weight: bold;">خدمة العملاء</p>
+                                    <!-- Phone Contact -->
+                                    <div class="info-container col-12">
+                                        <div class="info-icon">
+                                            <i class="ds-phone-call" style="color: #3ca078;"></i>
+                                        </div>
+                                        <div class="info-contant">
+                                            <p>رقم الهاتف</p>
+                                            <a href="tel:9200343222">9200343222</a>
+                                        </div>
+                                    </div>
+                                    <!-- Email Contact -->
+                                    <div class="info-container col-12">
+                                        <div class="info-icon">
+                                            <i class="ds-mail" style="color: #3ca078;"></i>
+                                        </div>
+                                        <div class="info-contant">
+                                            <p>البريد الإلكتروني</p>
+                                            <a href="mailto:help@company.sa">help@company.sa</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Download Service Guide Button -->
+                                <div class="row pb-5">
+                                    <div class="col-xl-11 col-lg-12 col-md-12">
+                                        <a href="#" class="btn btn-secondary" style="min-height: 40px; font-weight: bold;">
+                                            تحميل دليل الخدمة
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container" style="padding-top: 56px;">
+                <div class="row m-0">
+                    <div class="col-lg-9">
+                        <!-- Tabs and Tab Content Container -->
+                        <div class="ds-tab-accordion">
+                            <!-- Tab Navigation -->
+                            <ul class="nav nav-tabs ds-tabs" role="tablist">
+                                <li class="nav-item mr-0">
+                                    <a id="tab-A" href="#t1" class="nav-link px-0 active" data-toggle="tab" role="tab">
+                                        خطوات
+                                    </a>
+                                </li>
+                                <li class="nav-item mr-0">
+                                    <a id="tab-B" href="#t2" class="nav-link px-0" data-toggle="tab" role="tab">
+                                        الشروط
+                                    </a>
+                                </li>
+                                <li class="nav-item mr-0">
+                                    <a id="tab-C" href="#t3" class="nav-link px-0" data-toggle="tab" role="tab">
+                                        المستندات المطلوبة
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <!-- Tab Content -->
+                            <div class="tab-content" style="padding: 32px 0px 0px 0px; min-height: 400px;">
+                                <!-- Tab 1 - خطوات -->
+                                <div id="t1" class="tab-pane active">
+                                    <div class="service-details-steps mb-0">
+                                        <!-- Video or Image Section -->
+                                        <div class="">
+                                            <img src="../assets/img/video.svg" style="width: 100%; border-radius: 5px;" alt="service-example" />
+                                        </div>
+                                        <!-- Numbered Steps Section -->
+                                        <div class="countedSteps ds-lists mb-0" style="padding: 40px 0px 0px 0px;">
+                                            <ol>
+                                                <!-- Step 1 -->
+                                                <li>الدخول عن طريق البوابة الالكترونية</li>
+                                            </ol>
+                                            <br />
+                                            <p></p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Tab 2 - الشروط -->
+                                <div id="t2" class="tab-pane">
+                                    <div class="service-details-prereq">
+                                        <!-- Prerequisites Section -->
+                                        <div>
+                                            <div id="preReq">
+                                                <div class="ds-lists pl-4">
+                                                    <ul>
+                                                        <!-- No prerequisites message -->
+                                                        <li>لايوجد</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Tab 3 - المستندات المطلوبة -->
+                                <div id="t3" class="tab-pane">
+                                    <div class="service-details-support">
+                                        <!-- Required Documents Section -->
+                                        <div class="ds-lists pl-4">
+                                            <ul>
+                                                <!-- No required documents message -->
+                                                <li>لايوجد</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- mobile view  -->
+
+            <div class="col-lg-4 offset-lg-1 mt-4 mt-lg-0 p-0 px-lg-3 d-md-none d-block">
+                <!-- Service List Card -->
+                <div class="service-list-card">
+                    <!-- Business Details -->
+                    <div class="row mb-4 pb-2">
+                        <div class="col-2 pr-4">
+                            <i class="ds-user"></i>
+                        </div>
+                        <div class="col-9 p-0" style="font-weight: bold;">
+                            الأعمال
+                            <div>
+                                <small style="color: #757575;">الفئة المستهدفة</small>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Duration -->
+                    <div class="row mb-4 pb-2">
+                        <div class="col-2 pr-4">
+                            <i class="ds-clock"></i>
+                        </div>
+                        <div class="col-9 p-0" style="font-weight: bold;">
+                            بوم واحد
+                            <div>
+                                <small style="color: #757575;">المدة الزمنية للمرحلة</small>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Service Channels -->
+                    <div class="row mb-4 pb-2">
+                        <div class="col-2 pr-4">
+                            <i class="ds-monitor"></i>
+                        </div>
+                        <div class="col-9 p-0" style="font-weight: bold;">
+                            تطبيقات الويب والجوال
+                            <div>
+                                <small style="color: #757575;">قنوات تقديم الخدمة</small>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Cost -->
+                    <div class="row mb-4 pb-2">
+                        <div class="col-2 pr-4">
+                            <img src="../assets/img/price.svg" alt="logo" />
+                        </div>
+                        <div class="col-9 p-0" style="font-weight: bold;">
+                            مجانا
+                            <div>
+                                <small style="color: #757575;">التكلفة</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Customer Service Contacts -->
+                    <div class="row pt-4 mt-2 mb-2 pb-4">
+                        <p class="px-3 mb-0" style="font-weight: bold;">خدمة العملاء</p>
+                        <!-- Phone Contact -->
+                        <div class="info-container col-12">
+                            <div class="info-icon">
+                                <i class="ds-phone-call" style="color: #3ca078;"></i>
+                            </div>
+                            <div class="info-contant">
+                                <p>رقم الهاتف</p>
+                                <a href="tel:9200343222">9200343222</a>
+                            </div>
+                        </div>
+                        <!-- Email Contact -->
+                        <div class="info-container col-12">
+                            <div class="info-icon">
+                                <i class="ds-mail" style="color: #3ca078;"></i>
+                            </div>
+                            <div class="info-contant">
+                                <p>البريد الإلكتروني</p>
+                                <a href="mailto:help@company.sa">help@company.sa</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Download Service Guide Button -->
+                    <div class="row service-downloa pb-5">
+                        <div class="col-xl-11 col-lg-12 col-md-12">
+                            <a class="btn btn-secondary" style="min-height: 40px; font-weight: bold;">
+                                تحميل دليل الخدمة
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Last Modified Section -->
+        <div class="last-modified-section ds-footer">
+            <div class="ds-last-modified container">
+                <!-- Last Modified Date and Time -->
+                تاريخ آخر تحديث: 04/12/2030 – المملكة العربية السعودية 4:13 م
+            </div>
+        </div>
+
+        <!-- Feedback Section -->
+        <div class="feedback-section ds-footer">
+            <div class="ds-feedback px-4" style="padding: 30px 0;">
+                <!-- Feedback Header -->
+                <div class="ds-feedback-header container">
+                    <div class="question">
+                        هل ساعدتك هذة الصفحة ؟
+                    </div>
+                    <div class="anser">
+                        <!-- Feedback Buttons (Yes and No) -->
+                        <button type="button" class="btn btn-secondary btn-yes">
+                            نعم
+                        </button>
+                        <button type="button" class="btn btn-secondary btn-no">
+                            لا
+                        </button>
+                    </div>
+                    <div class="wrong-link">
+                        <!-- Wrong Link Report -->
+                        <a href="#" class="ds-link">حدث خطا في هذه الصفحة</a>
+                    </div>
+                    <div class="feedbacks">
+                        <!-- Feedback Statistics -->
+                        <span>60%</span>&nbsp;من الزوار ردوا &nbsp;<span>نعم</span>&nbsp; من اصل 2843 مشاركة
+                    </div>
+                </div>
+
+                <!-- Feedback Body -->
+                <div class="ds-feedback-body">
+                    <button class="close-btn">
+                        <!-- Close Button -->
+                        إغلاق <i class="ds-x-circle"></i>
+                    </button>
+                    <p class="h7 w-75">ساعدنا في تحسين [اسم الجهة]</p>
+                    <p>
+                        <!-- Feedback Instructions -->
+                        الرجاء عدم ذكر معلومات شخصية أو مالية مثل رقم التأمين الوطني أو تفاصيل بطاقة الائتمان.
+                    </p>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label for="label" class="font-weight-bold">ماذا كنت تفعل؟</label>
+                            <!-- Feedback Textarea - What were you doing? -->
+                            <textarea title="label" class="ds-text-input full-width" id="label" placeholder="أضف نص هنا" rows="2" spellcheck="false"></textarea>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="label1" class="font-weight-bold">ماذا حصل؟</label>
+                            <!-- Feedback Textarea - What happened? -->
+                            <textarea title="label1" class="ds-text-input full-width" id="label1" placeholder="أضف نص هنا" rows="2" spellcheck="false"></textarea>
+                        </div>
+                        <div class="col-md-12">
+                            <!-- Feedback Submit Button -->
+                            <button type="button" class="btn btn-primary feedback-btn">
+                                إرسال
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- start footer  -->
+        <footer class="ds-footer">
+            <div class="ds-footer-container">
+                <div class="ds-footer-policy p-2 container">
+                    <div class="p-2 bd-highlight m-0">
+                        <!-- logo   -->
+                        <img src="../assets/img/ds-white-logo.svg" style="width: 130px;" alt="" />
+
+                        <img src="../assets/img/Saudi_Vision_2030_logo.svg.png" style="width: 60px;" class="logo-white px-2" alt="" />
+                    </div>
+
+                    <div class="p-2 bd-highlight my-0">
+                        <a href="">شروط الإستخدام</a>
+                    </div>
+                    <div class="p-2 bd-highlight">
+                        <span>تطوير و تشغيل - وكالة التحول الرقمي</span>
+                    </div>
+                    <!-- copyright -->
+                    <div class="p-2 bd-highlight">
+                        <span> امانة العاصمة المقدسة © 2023 </span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- End footer  -->
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <!-- Bootstrap core JS-->
+
+        <script src="../assets/js/aos.js"></script>
+
+        <script src="../assets/js/nds-ds.js"></script>
+        <script src="../assets/js/highlight.min.js"></script>
+        <script src="../assets/js/main-js"></script>
+    </body>
+</html>
+
+<script>
+    AOS.init();
+</script>

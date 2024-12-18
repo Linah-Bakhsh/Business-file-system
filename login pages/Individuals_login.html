@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="shortcut icon" type="image/png" href="../assets/img/favicon.ico" />
+  <title>الدخول لمنصة ملف الأعمال</title>
+  <link href="../assets/css/nds-ds.css" rel="stylesheet" />
+  <link href="../assets/css/style.css" rel="stylesheet" />
+  <link href="../assets/css/login.css" rel="stylesheet" />
+  <link href="../assets/css/animate.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../assets/css/bootstrap-icons.css" />
+  <script src="../assets/js/jquery.min.js"></script>
+
+  <style></style>
+</head>
+
+<body>
+  <!-- Start  navigation bar -->
+  <nav class="navbar navbar-expand-lg ds-header sticky bg-graywhite d-lg-none d-sm-block">
+    <div class="container">
+      <div class="d-flex">
+        <a class="align-self-center name-system" href="#">
+          نظام
+          <span class="name-system2"> ملف الأعمال </span>
+        </a>
+      </div>
+      <!--login form -->
+
+      <div class="d-flex flex-row order-3" id="right-nav">
+        <ul class="navbar-nav flex-row">
+          <!-- user botton-->
+          <li class="nav-item align-self-center d-none d-lg-block">
+            <a class="navbar-brand" href="#">
+              <img src="../assets/img/logo.svg" class="mobile-logo" alt="logo" />
+              <!-- Light logo -->
+            </a>
+          </li>
+          <!--End user botton-->
+
+          <!-- user botton-->
+          <li class="nav-item align-self-center border-0">
+            <a class="px-2" href="#">
+              <img class="mobile-logo" src="../assets/img/baladi.png" alt="logo" width="90px" />
+            </a>
+          </li>
+          <!--End user botton-->
+        </ul>
+      </div>
+      <!--  navigation menu-->
+      <!--  End navigation menu-->
+    </div>
+  </nav>
+  <!-- End navigation bar -->
+
+  <!-- container -->
+
+  <div class="row row p-0 m-0" style="height: 100vh">
+    <!-- right column -->
+    <div class="col-lg-8 col-md-12">
+      <div class="container login-form px-0 animate__animated animate__fadeInUp animate__delay-1s">
+        <div class="d-flex justify-content-between mb-3">
+          <div class="bd-highlight">
+            <!-- logo  -->
+
+            <img class="logo-type" src="../assets/img/afrad logo.svg" alt="" />
+          </div>
+
+          <!-- btn back  -->
+
+          <div class="py-2 px-0 bd-highlight btn-back">
+            <a href="../login_type.html">
+              <img class="btn-back" src="../assets/img/btn-back.svg" alt="" />
+            </a>
+          </div>
+        </div>
+        <!--login form -->
+
+        <div class="vstack d-grid">
+          <div class="p-2">
+            <!--user ID -->
+
+            <div class="mb-4">
+              <label for="label1" class="ds-input-label">
+                رقم الهوية\ الإقامة
+              </label>
+              <input class="ds-text-input" id="label1" placeholder=" " />
+            </div>
+          </div>
+          <!--passwoard -->
+
+          <div class="p-2">
+            <div class="mb-4">
+              <label for="label2" class="ds-input-label"> كلمة المرور </label>
+              <input type="password" class="ds-text-input" id="label2" placeholder=" " />
+            </div>
+          </div>
+          <div class="p-2 py-3">
+            <!-- Button trigger modal -->
+
+            <!--btn submit  -->
+
+            <button type="submit" data-bs-toggle="modal" data-bs-target="#exampleModal"
+              class="btn btn-primary btn-login">
+              تسجيل الدخول
+            </button>
+          </div>
+
+          <div class="p-2 py-3">
+            <!--btn nafath  -->
+
+            <button type="button" class="btn btn-secondar btn-login">
+              تسجيل الدخول عن طريق النفاذ الوطني
+            </button>
+          </div>
+
+          <!--logo NIC  -->
+
+          <div class="p-2 text-center">
+            <img src="../assets/img/NIC_logo.svg " alt="" />
+            <span class="px-2 nic">
+              NIC بالتعاون مع مركز المعلومات الوطني
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--END left column -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header" data-bs-theme="dark">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body text-center container">
+            <img src="../assets/img/icon-authentication.svg" style="width: 171" alt="" />
+            <p class="pt-4">قم بإدخال رمز التحقق المرسل على</p>
+            <p class=" ">رقم جوالك 0495019474</p>
+
+            <div class="d-flex justify-content-center p-2">
+              <form name="code" action="*" method="post" autocomplete="off">
+                <input class="input-authenti m-2" type="text" name="code" maxlength="1" autocomplete="off" class="a" />
+                <input class="input-authenti m-2" type="text" name="code" maxlength="1" autocomplete="off" class="b" />
+                <input class="input-authenti m-2" type="text" name="code" maxlength="1" autocomplete="off" class="c" />
+                <input class="input-authenti m-2" type="text" name="code" maxlength="1" autocomplete="off"
+                  class="d last" />
+              </form>
+            </div>
+            <p class="p-2">
+              <b>
+                إعادة ارسال الرمز بعد
+                <samp class="text-greenlight"> 1:59</samp>
+              </b>
+            </p>
+
+
+            <a href="../dashboard pages/dashboard.html">
+
+              <button type="button " class="btn btn-primary btn-login mx-5 mb-4">
+                تحقق
+              </button>
+
+            </a>
+           
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Modal -->
+    <script>
+      $("form").on("input", (e) => {
+        var letters = ["a", "b", "c", "d"];
+        letters.forEach((letter) => {
+          let field = $(e.target);
+          field.val(field.val().replace(/[^0-9]/g, ""));
+          if (field.val().length == field.attr("maxlength")) {
+            field.nextAll("input").first().focus();
+          }
+        });
+      });
+    </script>
+
+    <!--END right column -->
+
+    <!--start left column -->
+
+    <div class="banner col-lg-4 col-md-12 col-12 animate__animated animate__fadeInLeft mobile-hide">
+      <div class="container p-5 grid gap-3">
+        <h1 class="p-2 text-white ds-display-font">من مكانك !</h1>
+        <h2 class="p-2 text-white">ابدأ بإدارة أعمالك من خلال</h2>
+        <p class="p-2 syst-title">نظام ملف الأعمال</p>
+      </div>
+    </div>
+  </div>
+  <!--END left column -->
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header" data-bs-theme="dark">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-center container">
+          <img src="../assets/img/icon-authentication.svg" style="width: 171" alt="" />
+          <p class="pt-4">قم بإدخال رمز التحقق المرسل على</p>
+          <p class=" ">رقم جوالك 0495019474</p>
+
+          <div class="d-flex justify-content-center p-2">
+            <form name="code" action="*" method="post" autocomplete="off">
+              <input class="input-authenti m-2" type="text" name="code" maxlength="1" autocomplete="off" class="a" />
+              <input class="input-authenti m-2" type="text" name="code" maxlength="1" autocomplete="off" class="b" />
+              <input class="input-authenti m-2" type="text" name="code" maxlength="1" autocomplete="off" class="c" />
+              <input class="input-authenti m-2" type="text" name="code" maxlength="1" autocomplete="off"
+                class="d last" />
+            </form>
+          </div>
+          <p class="p-2">
+            <b>
+              إعادة ارسال الرمز بعد
+              <samp class="text-greenlight"> 1:59</samp>
+            </b>
+          </p>
+
+          <a href="../dashboard pages/dashboard.html">
+            <button type="button " data-bs-target="#exampleModal" class="btn btn-primary btn-login mx-5 mb-4">
+              تحقق
+            </button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Modal -->
+  <script>
+    $("form").on("input", (e) => {
+      var letters = ["a", "b", "c", "d"];
+      letters.forEach((letter) => {
+        let field = $(e.target);
+        field.val(field.val().replace(/[^0-9]/g, ""));
+        if (field.val().length == field.attr("maxlength")) {
+          field.nextAll("input").first().focus();
+        }
+      });
+    });
+  </script>
+
+  <script type="text/javascript" src="../assets/js/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="../assets/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/js/nds-ds.js"></script>
+  <script src="../assets/js/highlight.min.js"></script>
+  <script src="../assets/js/main-js"></script>
+</body>
+
+</html>

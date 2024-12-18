@@ -1,0 +1,94 @@
+.btn-rate {
+    border-radius: 7px;
+    background: #e3f8e9 !important;
+
+    font-size: 12px;
+    text-align: right;
+    color: #5f6d7b;
+
+}
+
+.service-details-steps .ds-lists,
+.service-details-prereq .ds-lists,
+.service-details-support .ds-lists {
+    font-weight: 500;
+    font-size: 16px;
+
+}
+
+.service-list-card img {
+    height: auto;
+    margin-inline-start: auto;
+}
+
+
+/* Reset default styles for list items */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* Style for stars */
+.star-rating {
+    color: #c7cdd5;
+    direction: ltr;
+    text-align: right;
+
+
+}
+
+.bg-gray1 {
+    background: #fafafa !important;
+    border-radius: 12px !important;
+    ;
+    width: max-content !important;
+    ;
+}
+
+.star-rating input {
+    display: none;
+}
+
+.star-rating label {
+    font-size: 30px;
+    cursor: pointer;
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.star-rating label:hover,
+.star-rating input:checked~label {
+    color: #f8d64e;
+    /* Change the color for selected and hovered stars */
+}
+
+.star-rating label:hover~label,
+.star-rating input:checked~label:hover~label {
+    color: #f8d64e;
+    /* Reset color for stars after the hovered/starred one */
+}
+
+
+
+.ds-card-footer {
+    margin-top: 10px;
+    font-size: 10px;
+    line-height: 1.8;
+    letter-spacing: 1px;
+}
+
+.ds-service-card {
+    background-color: #fff;
+}
+
+
+
+
+
+@media (max-width: 600px) {
+    .agency-header .ds-text-input {
+        width: auto;
+
+    }
+
+}
